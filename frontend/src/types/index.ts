@@ -1,3 +1,107 @@
+export type FitVerdict = "Good Fit" | "Fit Concern" | "High Fit Concern" | "Insufficient Information";
+
+export interface MeasurementComparisonItem {
+  dimension: string;
+  body_measurement: number;
+  garment_measurement: number;
+  ease: number;
+  unit: string;
+  interpretation: string;
+  status: 'tight' | 'optimal' | 'loose' | 'adequate';
+}
+
+export interface AlternativeSizeEvaluation {
+  alternative_size: string;
+  is_available_in_chart: boolean;
+  dimensions?: Record<string, number>;
+  ease_analysis?: Record<string, number>;
+  assessment_notes: string;
+}
+
+export interface FitAssessment {
+  verdict: FitVerdict;
+  confidence: number;
+  fit_type: string;
+  tight_areas: string[];
+  loose_areas: string[];
+  measurement_comparison: MeasurementComparisonItem[];
+  alternative_size_check?: AlternativeSizeEvaluation | null;
+  summary: string;
+}
+
+export interface MLPredictionOutput {
+  predicted_return_probability: number;
+  predicted_return_percentage: number;
+  risk_tier: string;
+  model_name: string;
+  key_contributing_signals: string[];
+  limitations: string;
+}
+
+export interface HistoricalIntelligence {
+  total_orders_analyzed: number;
+  overall_return_rate: number;
+  category_baseline_rate: number;
+  risk_category: string;
+  top_return_reasons: Array<{
+    reason: string;
+    count: number;
+    percentage: number;
+  }>;
+  known_design_issues: string;
+  representative_feedback: string[];
+}
+
+export interface DecisionSynthesis {
+  reconciled_verdict: FitVerdict;
+  reconciliation_explanation: string;
+  actionable_advice: string;
+  evidence_weights: Record<string, string>;
+}
+
+export interface EvidenceSource {
+  title: string;
+  document: string;
+  confidence: string;
+  snippet?: string;
+}
+
+export interface CustomerExplanation {
+  methodology_summary: string;
+  data_sources_used: string[];
+  limitations_notice: string;
+}
+
+export interface StructuredAgentResponse {
+  intent: string;
+  product_id?: string;
+  product_name?: string;
+  selected_size?: string;
+  summary_message: string;
+  verdict?: FitVerdict;
+  fit_assessment?: FitAssessment | null;
+  measurement_comparison?: MeasurementComparisonItem[] | null;
+  ml_prediction?: MLPredictionOutput | null;
+  historical_analysis?: HistoricalIntelligence | null;
+  decision_synthesis?: DecisionSynthesis | null;
+  final_recommendation: string;
+  evidence_sources: EvidenceSource[];
+  missing_information: string[];
+  customer_explanation: CustomerExplanation;
+  tools_executed: string[];
+  execution_metadata: Record<string, any>;
+}
+
+export interface ChatMessage {
+  id: string;
+  sender: 'user' | 'agent';
+  text: string;
+  timestamp: string;
+  structuredResponse?: StructuredAgentResponse;
+  execution_mode?: string;
+  latency_ms?: number;
+}
+
 export interface Product {
   product_id: string;
   name: string;
@@ -55,23 +159,6 @@ export interface DashboardSummary {
   synthetic_notice: string;
 }
 
-export interface ChatMessage {
-  id: string;
-  sender: 'user' | 'agent';
-  text: string;
-  timestamp: string;
-  intent?: string;
-  tools_executed?: string[];
-  tool_results?: Record<string, any>;
-  sources?: Array<{
-    title: string;
-    document: string;
-    confidence: string;
-  }>;
-  execution_mode?: string;
-  latency_ms?: number;
-}
-
 export interface AISuggestion {
   id: string;
   product_id: string;
@@ -108,4 +195,3 @@ export interface ModelMetrics {
   feature_importances: Record<string, number>;
   synthetic_data_disclaimer: string;
 }
-

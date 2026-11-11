@@ -2,24 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   Send,
   Bot,
-  User,
-  Sparkles,
-  ChevronDown,
-  ChevronUp,
-  Cpu,
-  BookOpen,
   Ruler,
-  AlertCircle,
-  CheckCircle2,
-  HelpCircle,
   RotateCcw,
-  Sliders,
-  ExternalLink,
-  ShieldCheck,
-  Zap
+  Zap,
+  Info,
+  Sparkles,
+  ArrowRight,
+  ShieldCheck
 } from 'lucide-react';
 import { api } from '../services/api';
-import { Product, ChatMessage } from '../types';
+import { Product, ChatMessage, StructuredAgentResponse } from '../types';
+import { MarkdownRenderer } from '../components/MarkdownRenderer';
+import { RecommendationCard } from '../components/RecommendationCard';
 
 interface AssistantPageProps {
   initialProductId?: string;
@@ -43,9 +37,6 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
     shoulder: 18.0
   });
 
-  const [showMeasurementsPanel, setShowMeasurementsPanel] = useState<boolean>(true);
-  const [expandedTools, setExpandedTools] = useState<Record<string, boolean>>({});
-
   const [inputQuery, setInputQuery] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const [agentStep, setAgentStep] = useState<string>('');
@@ -54,9 +45,9 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
     {
       id: 'welcome',
       sender: 'agent',
-      text: "👋 Welcome to **Return or Regret AI**! I'm your pre-purchase decision agent.\n\nTell me which product you're considering and your personal measurements. I'll execute our Python sizing tools, evaluate the Scikit-learn ML return model, and check historical returns to recommend the right size *before* you buy.",
+      text: "👋 Welcome to **Return or Regret AI**! I'm your intelligent pre-purchase shopping decision agent.\n\nAsk about sizing, fabric comfort, or return risk for any catalog item. Adjust your measurements in the panel to test personal fit and receive evidence-grounded recommendations before you buy.",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-      execution_mode: 'Agent Ready'
+      execution_mode: 'Decision Engine Active'
     }
   ]);
 
@@ -108,20 +99,20 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
     setInputQuery('');
     setIsProcessing(true);
 
-    // Multi-step tool workflow visualization
-    setAgentStep('1. Analyzing intent and extracting measurements...');
+    // Dynamic customer-friendly pipeline indicators
+    setAgentStep('1. Identifying query intent and customer measurements...');
     setTimeout(() => {
-      setAgentStep('2. Calling size_chart_tool & fit_calculator_tool...');
-    }, 400);
+      setAgentStep('2. Comparing garment ease against fit tolerances...');
+    }, 350);
     setTimeout(() => {
-      setAgentStep('3. Querying return_risk_prediction_tool (ML Model)...');
-    }, 800);
+      setAgentStep('3. Consulting ML return risk & historical defect patterns...');
+    }, 700);
     setTimeout(() => {
-      setAgentStep('4. Performing RAG retrieval from verified specs & policies...');
-    }, 1200);
+      setAgentStep('4. Synthesizing evidence-based recommendation...');
+    }, 1050);
 
     try {
-      const response = await api.sendChatMessage({
+      const response: StructuredAgentResponse = await api.sendChatMessage({
         query: textToSend,
         context_product_id: selectedProductId,
         context_measurements: measurements as any
@@ -131,19 +122,14 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
       const agentMessage: ChatMessage = {
         id: agentMsgId,
         sender: 'agent',
-        text: response.final_answer,
+        text: response.summary_message || response.final_recommendation,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-        intent: response.intent,
-        tools_executed: response.tools_executed,
-        tool_results: response.tool_results,
-        sources: response.sources,
-        execution_mode: response.execution_mode,
-        latency_ms: response.latency_ms
+        structuredResponse: response,
+        execution_mode: response.execution_metadata?.execution_mode || 'Decision Synthesis Engine',
+        latency_ms: response.execution_metadata?.latency_ms
       };
 
       setMessages(prev => [...prev, agentMessage]);
-      // Auto-expand tool view for transparent academic viva
-      setExpandedTools(prev => ({ ...prev, [agentMsgId]: true }));
     } catch (err: any) {
       setMessages(prev => [
         ...prev,
@@ -161,15 +147,15 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
     }
   };
 
-  const toggleToolView = (msgId: string) => {
-    setExpandedTools(prev => ({ ...prev, [msgId]: !prev[msgId] }));
+  const handleSelectAlternativeSize = (newSize: string) => {
+    handleSendMessage(`How does Size ${newSize} compare for my measurements on ${selectedProductId}?`);
   };
 
   const suggestedQuestions = [
     `I usually wear size M and my chest measurement is 40 inches. Will ${selectedProductId} fit me?`,
-    `What are the verified dimensions and ease tolerance for Size L in ${selectedProductId}?`,
-    `Why are customers returning ${selectedProductId}? Analyze historical defects.`,
-    `What is our return and exchange window if this doesn't fit comfortably?`
+    `What material is ${selectedProductId} made of and how do I care for it?`,
+    `Why do customers return ${selectedProductId}? Check historical defects.`,
+    `What is our return policy if this item does not fit?`
   ];
 
   return (
@@ -220,7 +206,7 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
 
             <div className="mt-3 grid grid-cols-2 gap-2 text-[11px]">
               <div className="p-2 rounded bg-slate-50 border border-slate-100">
-                <span className="text-slate-400 block text-[10px]">Return Rate</span>
+                <span className="text-slate-400 block text-[10px]">Return Baseline</span>
                 <span className="font-bold text-orange-600">
                   {selectedProduct.historical_return_rate ? Math.round(selectedProduct.historical_return_rate * 100) : 25}%
                 </span>
@@ -303,8 +289,8 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
           </div>
 
           <div className="mt-4 p-2.5 rounded-lg bg-blue-50 border border-blue-100 text-[11px] text-blue-900 leading-relaxed">
-            <span className="font-semibold block mb-0.5 text-blue-800">Agent Note:</span>
-            These measurements are automatically passed as structured arguments into the Python <code className="bg-blue-100 px-1 py-0.5 rounded text-[10px]">fit_calculator_tool</code>.
+            <span className="font-semibold block mb-0.5 text-blue-800">Ground-Truth Ease Matching:</span>
+            Your measurements are directly evaluated against authentic garment dimensions with fit-type tolerances.
           </div>
         </div>
       </div>
@@ -319,12 +305,12 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
             </div>
             <div>
               <div className="flex items-center space-x-2">
-                <span className="font-semibold text-xs text-slate-900">Return or Regret Agent</span>
+                <span className="font-semibold text-xs text-slate-900">Return or Regret AI Assistant</span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold border border-emerald-200">
-                  6 Tools Registered
+                  Decision Engine Active
                 </span>
               </div>
-              <span className="text-[11px] text-slate-500">Autonomous tool execution &amp; grounded evidence reasoning</span>
+              <span className="text-[11px] text-slate-500">Autonomous evidence synthesis &amp; personalized ease calculation</span>
             </div>
           </div>
 
@@ -336,7 +322,7 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
                   sender: 'agent',
                   text: `Chat session reset. Ask about **${selectedProduct?.name || selectedProductId}** or any other catalog item!`,
                   timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-                  execution_mode: 'Ready'
+                  execution_mode: 'Decision Engine Active'
                 }
               ]);
             }}
@@ -351,7 +337,7 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
         <div className="flex-1 p-5 overflow-y-auto space-y-5">
           {messages.map((msg) => {
             const isUser = msg.sender === 'user';
-            const isExpanded = expandedTools[msg.id] ?? false;
+            const structured = msg.structuredResponse;
 
             return (
               <div
@@ -378,119 +364,36 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
                   )}
                 </div>
 
-                {/* Bubble */}
+                {/* Bubble Container */}
                 <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-3.5 text-xs leading-relaxed ${
+                  className={`max-w-[90%] md:max-w-[85%] rounded-2xl px-4 py-3.5 text-xs leading-relaxed ${
                     isUser
                       ? 'bg-orange-500 text-white rounded-br-none shadow-sm'
-                      : 'bg-slate-50 text-slate-800 border border-slate-200/80 rounded-bl-none shadow-sm'
+                      : 'bg-slate-50/70 text-slate-800 border border-slate-200/80 rounded-bl-none shadow-sm'
                   }`}
                 >
-                  {/* Markdown formatted content */}
-                  <div className="whitespace-pre-wrap space-y-2 prose prose-xs max-w-none">
-                    {msg.text}
-                  </div>
-
-                  {/* Tool Execution Accordion (Only for agent responses with tools) */}
-                  {!isUser && msg.tools_executed && msg.tools_executed.length > 0 && (
-                    <div className="mt-3.5 pt-3 border-t border-slate-200">
-                      <button
-                        onClick={() => toggleToolView(msg.id)}
-                        className="flex items-center justify-between w-full px-2.5 py-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-50 transition-colors text-[11px] font-medium text-slate-700 shadow-2xs"
-                      >
-                        <div className="flex items-center space-x-1.5">
-                          <Cpu size={14} className="text-orange-500" />
-                          <span>
-                            Python Tool Execution Logs ({msg.tools_executed.length} tools called)
-                          </span>
-                        </div>
-                        {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                      </button>
-
-                      {isExpanded && (
-                        <div className="mt-2 space-y-2 p-2.5 rounded-lg bg-slate-900 text-slate-200 font-mono text-[11px] overflow-x-auto border border-slate-800">
-                          <div className="text-orange-400 font-semibold mb-1">
-                            &gt; Agent Intent: {msg.intent}
-                          </div>
-                          {msg.tools_executed.map((toolName) => {
-                            const res = msg.tool_results?.[toolName];
-                            return (
-                              <div key={toolName} className="p-2 rounded bg-slate-800/80 border border-slate-700/60">
-                                <div className="flex items-center justify-between text-emerald-400 font-semibold">
-                                  <span>&bull; {toolName}</span>
-                                  <span className="text-[10px] text-slate-400">status: ok</span>
-                                </div>
-                                <div className="mt-1 text-[10px] text-slate-300">
-                                  {toolName === 'fit_calculator_tool' && res?.measurement_analysis && (
-                                    <div className="text-slate-300">
-                                      Verdict: <span className="text-amber-300">{res.overall_verdict}</span> | Ease tolerance computed: {JSON.stringify(res.measurement_analysis)}
-                                    </div>
-                                  )}
-                                  {toolName === 'return_risk_prediction_tool' && res && (
-                                    <div className="text-slate-300">
-                                      ML Risk Prob: <span className="text-orange-300">{res.predicted_return_percentage}%</span> ({res.risk_level} Risk) | Model: {res.ml_model_used}
-                                    </div>
-                                  )}
-                                  {toolName === 'return_history_analyzer_tool' && res && (
-                                    <div className="text-slate-300">
-                                      Historical Return Rate: {res.overall_return_rate}% across {res.total_orders_analyzed} orders | Top reason: {res.top_return_reasons?.[0]?.reason}
-                                    </div>
-                                  )}
-                                  {toolName === 'size_chart_tool' && (
-                                    <div className="text-slate-300">
-                                      Garment dimensions retrieved from official specifications.
-                                    </div>
-                                  )}
-                                  {toolName === 'product_information_tool' && (
-                                    <div className="text-slate-300">
-                                      Verified fabric: {res.material} | Silhouette: {res.fit_type}
-                                    </div>
-                                  )}
-                                  {toolName === 'rag_retrieval_tool' && (
-                                    <div className="text-slate-300">
-                                      Retrieved {res.total_results || 3} verified knowledge base chunks with cosine similarity.
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Citations Pill List */}
-                  {!isUser && msg.sources && msg.sources.length > 0 && (
-                    <div className="mt-2.5 flex flex-wrap gap-1.5 items-center">
-                      <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mr-1">
-                        Grounded Sources:
-                      </span>
-                      {msg.sources.map((s, idx) => (
-                        <span
-                          key={idx}
-                          className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-full bg-slate-200/70 text-slate-700 text-[10px] font-medium"
-                          title={`Confidence: ${s.confidence}`}
-                        >
-                          <BookOpen size={11} className="text-orange-500" />
-                          <span>{s.title}</span>
-                        </span>
-                      ))}
-                    </div>
+                  {/* If structured response is present, render rich customer-facing recommendation widgets */}
+                  {structured ? (
+                    <RecommendationCard
+                      response={structured}
+                      onSelectSize={handleSelectAlternativeSize}
+                    />
+                  ) : (
+                    <MarkdownRenderer content={msg.text} />
                   )}
                 </div>
               </div>
             );
           })}
 
-          {/* Typing & Tool Calling Live Progress Indicator */}
+          {/* Typing & Reasoning Animation */}
           {isProcessing && (
             <div className="flex flex-col items-start space-y-2">
               <div className="flex items-center space-x-2 text-[11px] text-orange-600 font-medium">
                 <Zap size={14} className="animate-bounce" />
-                <span>AI Agent Reasoning in Progress</span>
+                <span>AI Agent Synthesizing Recommendation</span>
               </div>
-              <div className="p-3.5 rounded-2xl rounded-bl-none bg-slate-900 text-slate-200 border border-slate-800 text-xs shadow-md space-y-2 max-w-md">
+              <div className="p-3 rounded-xl rounded-bl-none bg-slate-900 text-slate-200 border border-slate-800 text-xs shadow-md space-y-2 max-w-md">
                 <div className="flex items-center space-x-2 font-mono text-[11px] text-orange-400">
                   <span className="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
                   <span>{agentStep}</span>
@@ -535,7 +438,7 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
               type="text"
               value={inputQuery}
               onChange={(e) => setInputQuery(e.target.value)}
-              placeholder={`Ask about ${selectedProduct?.name || selectedProductId} (e.g. 'My chest is 40", will size M fit?')...`}
+              placeholder={`Ask about ${selectedProduct?.name || selectedProductId} (e.g. 'Will Size M fit 40" chest?')...`}
               disabled={isProcessing}
               className="flex-1 px-4 py-2.5 rounded-xl border border-slate-200/90 text-xs bg-slate-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all text-slate-900 placeholder:text-slate-400 shadow-2xs"
             />
@@ -549,7 +452,7 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
             </button>
           </form>
           <div className="mt-2 flex items-center justify-between text-[10px] text-slate-400 px-1">
-            <span>Deterministic Academic Decision Mode enabled with Scikit-learn + FAISS vector search</span>
+            <span>Evidence-based decision synthesis &bull; Sizing over return penalties</span>
             <span>Zero customer return penalties</span>
           </div>
         </div>
@@ -557,4 +460,3 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
     </div>
   );
 };
-

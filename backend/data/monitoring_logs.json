@@ -1,5 +1,749 @@
 [
   {
+    "timestamp": "2026-11-11T13:19:36.135352",
+    "query": "I usually wear size M and my chest measurement is 40 inches. Will P001 fit me?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 18.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.828414",
+    "query": "What are the wash care instructions for P005?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P005",
+    "selected_size": "30",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 3.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.809947",
+    "query": "My chest is 101.6 cm and waist is 86.4 cm. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0,
+      "waist": 34.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 10.5,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.781742",
+    "query": "I have 42 chest and 36 waist. Recommend size for P002",
+    "detected_intent": "GENERAL_PRODUCT_CONSULTATION",
+    "product_id": "P002",
+    "selected_size": "FOR",
+    "customer_measurements": {
+      "chest": 36.0,
+      "waist": 2.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 13.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "Medium",
+    "predicted_probability": 29.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.748173",
+    "query": "Will Size XXL fit on P001?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "XXL",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 10.7,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "High",
+    "predicted_probability": 49.3
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.720708",
+    "query": "What is the return policy for footwear?",
+    "detected_intent": "RETURN_POLICY_INQUIRY",
+    "product_id": null,
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 1.6,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.703707",
+    "query": "Show size chart for P004",
+    "detected_intent": "SIZE_CHART_INQUIRY",
+    "product_id": "P004",
+    "selected_size": "CHART",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool"
+    ],
+    "execution_time_ms": 0.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.685722",
+    "query": "My chest is 40 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 11.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.658653",
+    "query": "Should I purchase P001 in size M with chest 40 inches?",
+    "detected_intent": "COMPLEX_PURCHASE_DECISION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 11.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.626643",
+    "query": "What is the predicted probability of return for P005?",
+    "detected_intent": "RETURN_RISK_INQUIRY",
+    "product_id": "P005",
+    "selected_size": "30",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool"
+    ],
+    "execution_time_ms": 8.4,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "High",
+    "predicted_probability": 64.6
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.601640",
+    "query": "Why do customers return P004?",
+    "detected_intent": "RETURN_HISTORY_INQUIRY",
+    "product_id": "P004",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "return_history_analyzer_tool"
+    ],
+    "execution_time_ms": 4.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.577787",
+    "query": "My chest is 40 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 12.1,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.550633",
+    "query": "My chest is 40 inches and waist is 34 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0,
+      "waist": 34.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 11.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.523601",
+    "query": "My chest is 40 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 9.7,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.497598",
+    "query": "Will P001 fit me comfortably?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 13.7,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.468045",
+    "query": "Show me the size chart for P003.",
+    "detected_intent": "SIZE_CHART_INQUIRY",
+    "product_id": "P003",
+    "selected_size": "CHART",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool"
+    ],
+    "execution_time_ms": 0.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.451229",
+    "query": "How much does P002 cost?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P002",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool"
+    ],
+    "execution_time_ms": 1.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:19:24.430208",
+    "query": "What material is P001 made of?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool"
+    ],
+    "execution_time_ms": 4.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.582018",
+    "query": "What are the wash care instructions for P005?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P005",
+    "selected_size": "30",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 1.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.566051",
+    "query": "Will Size XXL fit on P001?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "XXL",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 8.8,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "High",
+    "predicted_probability": 49.3
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.539013",
+    "query": "What is the return policy for footwear?",
+    "detected_intent": "RETURN_POLICY_INQUIRY",
+    "product_id": null,
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 2.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.521023",
+    "query": "Show size chart for P004",
+    "detected_intent": "SIZE_CHART_INQUIRY",
+    "product_id": "P004",
+    "selected_size": "CHART",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool"
+    ],
+    "execution_time_ms": 0.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.499068",
+    "query": "My chest is 40 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 11.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.466970",
+    "query": "Should I purchase P001 in size M with chest 40 inches?",
+    "detected_intent": "COMPLEX_PURCHASE_DECISION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 8.8,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.441939",
+    "query": "What is the predicted probability of return for P005?",
+    "detected_intent": "RETURN_RISK_INQUIRY",
+    "product_id": "P005",
+    "selected_size": "30",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool"
+    ],
+    "execution_time_ms": 9.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "High",
+    "predicted_probability": 64.6
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.416936",
+    "query": "Why do customers return P004?",
+    "detected_intent": "RETURN_HISTORY_INQUIRY",
+    "product_id": "P004",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "return_history_analyzer_tool"
+    ],
+    "execution_time_ms": 4.7,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.396706",
+    "query": "My chest is 40 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 15.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.363705",
+    "query": "My chest is 40 inches. Will P001 Size M fit?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 11.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.336768",
+    "query": "Will P001 fit me comfortably?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 12.6,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.311865",
+    "query": "Show me the size chart for P003.",
+    "detected_intent": "SIZE_CHART_INQUIRY",
+    "product_id": "P003",
+    "selected_size": "CHART",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool"
+    ],
+    "execution_time_ms": 0.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.298172",
+    "query": "How much does P002 cost?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P002",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool"
+    ],
+    "execution_time_ms": 0.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:18:47.281127",
+    "query": "What material is P001 made of?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool"
+    ],
+    "execution_time_ms": 2.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:15:47.802392",
+    "query": "Why do customers return P004?",
+    "detected_intent": "RETURN_HISTORY_INQUIRY",
+    "product_id": "P004",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "return_history_analyzer_tool"
+    ],
+    "execution_time_ms": 5.8,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:15:47.783392",
+    "query": "What is the return policy?",
+    "detected_intent": "RETURN_POLICY_INQUIRY",
+    "product_id": null,
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 4.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:15:47.763358",
+    "query": "What material is P001 made of?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool"
+    ],
+    "execution_time_ms": 1.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "N/A",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
+    "timestamp": "2026-11-11T13:15:31.370705",
+    "query": "I usually wear size M and my chest measurement is 40 inches. Will P001 fit me?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 27.5,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "High Fit Concern",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:00:42.483827",
+    "query": "I usually wear size M and my chest measurement is 40 inches. Will P001 fit me?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0,
+      "waist": 34.0,
+      "shoulder": 18.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_history_analyzer_tool",
+      "return_risk_prediction_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 42.0,
+    "execution_mode": "Deterministic Academic Engine (Rule & Model-Driven)",
+    "status": "success",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T13:00:17.249676",
+    "query": "What material is this shirt made of?",
+    "detected_intent": "PRODUCT_SPECS_AND_CARE",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0,
+      "waist": 34.0,
+      "shoulder": 18.0
+    },
+    "tools_called": [
+      "product_information_tool"
+    ],
+    "execution_time_ms": 6.9,
+    "execution_mode": "Deterministic Academic Engine (Rule & Model-Driven)",
+    "status": "success",
+    "prediction_risk": "N/A",
+    "predicted_probability": "N/A"
+  },
+  {
     "timestamp": "2026-11-11T12:29:22.829878",
     "query": "I usually wear size M and my chest measurement is 40 inches. Will P001 fit me?",
     "detected_intent": "FIT_RECOMMENDATION",

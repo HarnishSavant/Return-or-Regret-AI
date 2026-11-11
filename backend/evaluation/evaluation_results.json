@@ -1,0 +1,422 @@
+{
+  "timestamp": "2026-11-11T13:19:24",
+  "total_scenarios": 20,
+  "passed": 20,
+  "failed": 0,
+  "pass_rate_pct": 100.0,
+  "test_records": [
+    {
+      "test_id": "TC-01",
+      "name": "Product Material Question",
+      "query": "What material is P001 made of?",
+      "expected_intent": "PRODUCT_SPECS_AND_CARE",
+      "actual_intent": "PRODUCT_SPECS_AND_CARE",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "latency_ms": 24.0,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-02",
+      "name": "Product Price Question",
+      "query": "How much does P002 cost?",
+      "expected_intent": "PRODUCT_SPECS_AND_CARE",
+      "actual_intent": "PRODUCT_SPECS_AND_CARE",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "latency_ms": 17.8,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-03",
+      "name": "Size Chart Question",
+      "query": "Show me the size chart for P003.",
+      "expected_intent": "SIZE_CHART_INQUIRY",
+      "actual_intent": "SIZE_CHART_INQUIRY",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "latency_ms": 15.8,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-04",
+      "name": "Missing Chest Measurement",
+      "query": "Will P001 fit me comfortably?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 30.1,
+      "status": "PASS",
+      "verdict": "Insufficient Information",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-05",
+      "name": "Missing Shoulder Measurement (Slim Fit Shirt)",
+      "query": "My chest is 40 inches. Will P001 Size M fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 25.7,
+      "status": "PASS",
+      "verdict": "High Fit Concern",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-06",
+      "name": "Customer Fit Recommendation (Chest 40 on P001 Size M)",
+      "query": "My chest is 40 inches and waist is 34 inches. Will P001 Size M fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 26.0,
+      "status": "PASS",
+      "verdict": "High Fit Concern",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-07",
+      "name": "Alternative Size Comparison (Size L Inspection)",
+      "query": "My chest is 40 inches. Will P001 Size M fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 31.0,
+      "status": "PASS",
+      "verdict": "High Fit Concern",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-08",
+      "name": "Historical Return Analysis",
+      "query": "Why do customers return P004?",
+      "expected_intent": "RETURN_HISTORY_INQUIRY",
+      "actual_intent": "RETURN_HISTORY_INQUIRY",
+      "expected_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "latency_ms": 20.6,
+      "status": "PASS",
+      "verdict": "Insufficient Information",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-09",
+      "name": "ML Return Prediction",
+      "query": "What is the predicted probability of return for P005?",
+      "expected_intent": "RETURN_RISK_INQUIRY",
+      "actual_intent": "RETURN_RISK_INQUIRY",
+      "expected_tools": [
+        "return_risk_prediction_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "latency_ms": 29.4,
+      "status": "PASS",
+      "verdict": "Insufficient Information",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-10",
+      "name": "Complex Shopping Decision",
+      "query": "Should I purchase P001 in size M with chest 40 inches?",
+      "expected_intent": "COMPLEX_PURCHASE_DECISION",
+      "actual_intent": "COMPLEX_PURCHASE_DECISION",
+      "expected_tools": [
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 27.1,
+      "status": "PASS",
+      "verdict": "High Fit Concern",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-11",
+      "name": "Conflicting ML & Fit Results Reconciliation",
+      "query": "My chest is 40 inches. Will P001 Size M fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "fit_calculator_tool",
+        "return_risk_prediction_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 28.3,
+      "status": "PASS",
+      "verdict": "High Fit Concern",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-12",
+      "name": "Unsupported Product Question (Out-of-Catalog)",
+      "query": "Do you sell Rolex watches?",
+      "expected_intent": "UNSUPPORTED_OR_IRRELEVANT",
+      "actual_intent": "UNSUPPORTED_OR_IRRELEVANT",
+      "expected_tools": [],
+      "actual_tools": [],
+      "latency_ms": 0.0,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-13",
+      "name": "Invalid Product ID Validation",
+      "query": "Will size M fit for product P999?",
+      "expected_intent": "INVALID_PRODUCT_ID",
+      "actual_intent": "INVALID_PRODUCT_ID",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "latency_ms": 0.0,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-14",
+      "name": "Missing Product Size Chart Handling",
+      "query": "Show size chart for P004",
+      "expected_intent": "SIZE_CHART_INQUIRY",
+      "actual_intent": "SIZE_CHART_INQUIRY",
+      "expected_tools": [
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "latency_ms": 15.4,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-15",
+      "name": "Irrelevant Question",
+      "query": "What is the capital of France?",
+      "expected_intent": "UNSUPPORTED_OR_IRRELEVANT",
+      "actual_intent": "UNSUPPORTED_OR_IRRELEVANT",
+      "expected_tools": [],
+      "actual_tools": [],
+      "latency_ms": 0.0,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-16",
+      "name": "RAG Retrieval Accuracy (Policy Inquiry)",
+      "query": "What is the return policy for footwear?",
+      "expected_intent": "RETURN_POLICY_INQUIRY",
+      "actual_intent": "RETURN_POLICY_INQUIRY",
+      "expected_tools": [
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 18.3,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-17",
+      "name": "Tool Execution Failure Resilience",
+      "query": "Will Size XXL fit on P001?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 31.3,
+      "status": "PASS",
+      "verdict": "Insufficient Information",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-18",
+      "name": "Multi-Tool Execution Under Latency Target",
+      "query": "I have 42 chest and 36 waist. Recommend size for P002",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "GENERAL_PRODUCT_CONSULTATION",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 30.7,
+      "status": "PASS",
+      "verdict": "Insufficient Information",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-19",
+      "name": "Unit Conversion Handling (Metric cm to Inches)",
+      "query": "My chest is 101.6 cm and waist is 86.4 cm. Will P001 Size M fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_tools": [
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 26.0,
+      "status": "PASS",
+      "verdict": "High Fit Concern",
+      "tools_pass": true,
+      "criterion_pass": true
+    },
+    {
+      "test_id": "TC-20",
+      "name": "Backend/API Health & Robustness",
+      "query": "What are the wash care instructions for P005?",
+      "expected_intent": "PRODUCT_SPECS_AND_CARE",
+      "actual_intent": "PRODUCT_SPECS_AND_CARE",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "latency_ms": 24.4,
+      "status": "PASS",
+      "verdict": null,
+      "tools_pass": true,
+      "criterion_pass": true
+    }
+  ]
+}

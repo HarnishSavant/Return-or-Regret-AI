@@ -1,4 +1,4 @@
-import { DashboardSummary, Product, AISuggestion, ModelMetrics } from '../types';
+import { DashboardSummary, Product, AISuggestion, ModelMetrics, StructuredAgentResponse } from '../types';
 
 const BASE_URL = '/api';
 
@@ -36,7 +36,7 @@ export const api = {
     query: string;
     context_product_id?: string;
     context_measurements?: Record<string, number>;
-  }) {
+  }): Promise<StructuredAgentResponse> {
     const res = await fetch(`${BASE_URL}/agent/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -112,4 +112,3 @@ export const api = {
     return res.json();
   }
 };
-
