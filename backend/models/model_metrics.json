@@ -1,0 +1,109 @@
+{
+  "trained_at": "2026-11-11T12:12:39.234542",
+  "total_samples": 920,
+  "train_samples": 736,
+  "test_samples": 184,
+  "features_used": [
+    "category",
+    "fit_type",
+    "price",
+    "size_guide_available",
+    "description_completeness",
+    "discount_applied",
+    "bracketing_order",
+    "historical_return_rate",
+    "product_size_return_rate"
+  ],
+  "best_model": "Logistic Regression",
+  "models_benchmark": {
+    "Logistic Regression": {
+      "model_name": "Logistic Regression",
+      "cv_f1_mean": 0.5576,
+      "cv_f1_std": 0.0249,
+      "accuracy": 0.6848,
+      "precision": 0.475,
+      "recall": 0.7037,
+      "f1_score": 0.5672,
+      "roc_auc": 0.752,
+      "pr_auc": 0.5838,
+      "confusion_matrix": [
+        [
+          88,
+          42
+        ],
+        [
+          16,
+          38
+        ]
+      ],
+      "test_sample_count": 184
+    },
+    "Random Forest": {
+      "model_name": "Random Forest",
+      "cv_f1_mean": 0.4774,
+      "cv_f1_std": 0.0281,
+      "accuracy": 0.6902,
+      "precision": 0.4776,
+      "recall": 0.5926,
+      "f1_score": 0.5289,
+      "roc_auc": 0.7083,
+      "pr_auc": 0.5509,
+      "confusion_matrix": [
+        [
+          95,
+          35
+        ],
+        [
+          22,
+          32
+        ]
+      ],
+      "test_sample_count": 184
+    },
+    "Gradient Boosting": {
+      "model_name": "Gradient Boosting",
+      "cv_f1_mean": 0.3915,
+      "cv_f1_std": 0.0733,
+      "accuracy": 0.7337,
+      "precision": 0.5676,
+      "recall": 0.3889,
+      "f1_score": 0.4615,
+      "roc_auc": 0.675,
+      "pr_auc": 0.5044,
+      "confusion_matrix": [
+        [
+          114,
+          16
+        ],
+        [
+          33,
+          21
+        ]
+      ],
+      "test_sample_count": 184
+    }
+  },
+  "feature_importances": {
+    "product_size_return_rate": 0.3282,
+    "category_Footwear": 0.1039,
+    "historical_return_rate": 0.0654,
+    "bracketing_order": 0.0566,
+    "category_Outerwear": 0.0509,
+    "category_Dresses": 0.0497,
+    "price": 0.0476,
+    "fit_type_Slim Fit": 0.0443,
+    "category_T-Shirts": 0.0409,
+    "fit_type_Oversized": 0.0401,
+    "fit_type_Regular Fit": 0.029,
+    "category_Jeans": 0.0275,
+    "fit_type_Relaxed Fit": 0.0274,
+    "size_guide_available": 0.0251,
+    "description_completeness": 0.0241,
+    "category_Pants": 0.0231,
+    "discount_applied": 0.0085,
+    "fit_type_Athletic": 0.0051,
+    "category_Shirts": 0.0024,
+    "category_Activewear": 0.0002
+  },
+  "synthetic_data_disclaimer": "Trained on synthetic demonstration data following realistic apparel e-commerce distribution patterns. For academic demonstration purposes only."
+}

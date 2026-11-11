@@ -1,0 +1,62 @@
+[
+  {
+    "id": "SUGG-001",
+    "product_id": "P001",
+    "product_name": "Heritage Oxford Slim Shirt",
+    "category": "Shirts",
+    "trigger_issue": "Customers frequently report tight shoulders (50% of returns cite shoulder/armhole tightness).",
+    "severity": "High",
+    "ai_suggested_action": "Add explicit shoulder-width measurement range and 'Athletic builds should size up' disclaimer to product sizing card.",
+    "estimated_impact": "Reduces avoidable sizing returns by 18-24%.",
+    "status": "pending",
+    "created_at": "2026-11-10T14:30:00"
+  },
+  {
+    "id": "SUGG-002",
+    "product_id": "P004",
+    "product_name": "Mercerized Ribbed Polo",
+    "category": "T-Shirts",
+    "trigger_issue": "Product page completely lacks an official size chart; description completeness is only 65%.",
+    "severity": "Critical",
+    "ai_suggested_action": "Publish complete garment chest and bicep sleeve band measurements table immediately.",
+    "estimated_impact": "Reduces blind sizing guesswork; expected 30% reduction in returns.",
+    "status": "pending",
+    "created_at": "2026-11-10T15:10:00"
+  },
+  {
+    "id": "SUGG-003",
+    "product_id": "P008",
+    "product_name": "Silk Satin Bias Cut Midi Dress",
+    "category": "Dresses",
+    "trigger_issue": "Bias-cut mulberry silk clings across hips, causing 40% of returns to cite 'Size Too Small' on hip seams.",
+    "severity": "High",
+    "ai_suggested_action": "Upload dynamic hip ease calculator and model proportion notes (e.g. Model is 5'9\", wearing Size S with 36\" hips).",
+    "estimated_impact": "Decreases hip-constriction returns by 22%.",
+    "status": "pending",
+    "created_at": "2026-11-10T16:00:00"
+  },
+  {
+    "id": "SUGG-004",
+    "product_id": "P015",
+    "product_name": "Chunky Cable-Knit Wool Cardigan",
+    "category": "Outerwear",
+    "trigger_issue": "No sleeve length measurements provided, leading to customer reports of oversized drape.",
+    "severity": "Medium",
+    "ai_suggested_action": "Add sleeve length and knit relaxation guidance after hanging.",
+    "estimated_impact": "Reduces sizing discrepancy returns by 14%.",
+    "status": "pending",
+    "created_at": "2026-11-11T09:15:00"
+  },
+  {
+    "id": "SUGG-005",
+    "product_id": "P005",
+    "product_name": "Selvedge Slim-Taper Denim Jeans",
+    "category": "Jeans",
+    "trigger_issue": "Initial raw denim waist rigidity leads customers to believe jeans are too small before break-in.",
+    "severity": "Low",
+    "ai_suggested_action": "Add 'Break-in Advisory: Raw denim waistband naturally loosens by 0.75\" after first week' note.",
+    "estimated_impact": "Prevents premature day-one returns by 12%.",
+    "status": "approved",
+    "created_at": "2026-11-09T11:00:00"
+  }
+]

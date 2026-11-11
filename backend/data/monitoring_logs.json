@@ -1,0 +1,91 @@
+[
+  {
+    "timestamp": "2026-11-11T12:29:22.829878",
+    "query": "I usually wear size M and my chest measurement is 40 inches. Will P001 fit me?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_history_analyzer_tool",
+      "return_risk_prediction_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 65.7,
+    "execution_mode": "Deterministic Academic Engine (Rule & Model-Driven)",
+    "status": "success",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T12:17:24.544492",
+    "query": "What size should I get for P001 if my chest is 40?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "SHOULD",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_history_analyzer_tool",
+      "return_risk_prediction_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 15.0,
+    "execution_mode": "Deterministic Academic Engine (Rule & Model-Driven)",
+    "status": "success",
+    "prediction_risk": "High",
+    "predicted_probability": 37.2
+  },
+  {
+    "timestamp": "2026-11-11T12:15:46.860684",
+    "query": "I usually wear size M and my chest measurement is 40 inches. Will this shirt fit me?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "fit_calculator_tool",
+      "return_history_analyzer_tool",
+      "return_risk_prediction_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 12.6,
+    "execution_mode": "Deterministic Academic Engine (Rule & Model-Driven)",
+    "status": "success",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
+    "timestamp": "2026-11-11T12:15:09.509088",
+    "query": "I usually wear size M and my chest measurement is 40 inches. Will P001 fit me?",
+    "detected_intent": "FIT_RECOMMENDATION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {},
+    "tools_called": [
+      "product_information_tool",
+      "size_chart_tool",
+      "return_history_analyzer_tool",
+      "return_risk_prediction_tool",
+      "rag_retrieval_tool"
+    ],
+    "execution_time_ms": 12.0,
+    "execution_mode": "Deterministic Academic Engine (Rule & Model-Driven)",
+    "status": "success",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  }
+]

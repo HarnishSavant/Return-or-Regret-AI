@@ -1,0 +1,921 @@
+order_id,product_id,product_name,category,price,selected_size,fit_type,size_guide_available,description_completeness,discount_applied,bracketing_order,returned,return_reason,customer_feedback,order_date,historical_return_rate,product_size_return_rate
+ORD-1001,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-08-19 08:01:00,0.5833,0.5833
+ORD-1002,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,S,Oversized,1,0.9,0.25,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-05-07 15:37:00,0.2264,0.3333
+ORD-1003,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.0,0,0,,,2026-07-08 12:09:00,0.2,0.2
+ORD-1004,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.15,1,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-02-06 19:29:00,0.3902,0.4545
+ORD-1005,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.15,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-04-23 19:04:00,0.125,0.2727
+ORD-1006,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.0,0,0,,,2026-03-07 14:17:00,0.1833,0.1429
+ORD-1007,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.1,0,1,Size Too Small,Way tighter than expected across the chest.,2026-04-12 16:46:00,0.6585,0.6364
+ORD-1008,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,S,Regular Fit,0,0.6,0.1,0,0,,,2026-05-07 18:20:00,0.7073,0.6667
+ORD-1009,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.1,0,0,,,2026-02-17 11:58:00,0.1833,0.1429
+ORD-1010,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.15,0,0,,,2026-09-06 10:16:00,0.25,0.0714
+ORD-1011,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.25,0,1,Size Too Large,Length and waist were much wider than standard.,2026-08-07 13:14:00,0.2931,0.25
+ORD-1012,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,34,Slim Fit,1,0.88,0.0,0,0,,,2026-04-03 18:10:00,0.2931,0.0
+ORD-1013,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.15,1,0,,,2026-09-11 16:16:00,0.1538,0.0
+ORD-1014,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.0,0,0,,,2026-10-16 20:17:00,0.125,0.2727
+ORD-1015,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.0,0,0,,,2026-05-29 16:48:00,0.25,0.3636
+ORD-1016,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.1,0,0,,,2026-10-01 17:12:00,0.2449,0.1538
+ORD-1017,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.25,0,0,,,2026-10-13 22:00:00,0.2931,0.25
+ORD-1018,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.1,1,0,,,2026-06-21 11:03:00,0.25,0.1429
+ORD-1019,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.15,1,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-03-20 10:42:00,0.7073,0.7273
+ORD-1020,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.25,0,0,,,2026-08-19 11:59:00,0.3276,0.1818
+ORD-1021,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.15,0,0,,,2026-07-25 15:57:00,0.125,0.1053
+ORD-1022,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-07 08:04:00,0.322,0.375
+ORD-1023,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.0,1,0,,,2026-02-20 16:15:00,0.1833,0.1429
+ORD-1024,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-09-14 11:50:00,0.2,0.0769
+ORD-1025,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,0,0,,,2026-07-15 14:26:00,0.3276,0.6429
+ORD-1026,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-05-22 11:12:00,0.6585,0.8333
+ORD-1027,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.0,0,0,,,2026-05-22 21:59:00,0.125,0.0909
+ORD-1028,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.25,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-01-22 09:59:00,0.2264,0.2308
+ORD-1029,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,S,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-04-09 14:00:00,0.7073,0.6667
+ORD-1030,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.15,0,0,,,2026-09-21 10:12:00,0.322,0.1765
+ORD-1031,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.25,0,0,,,2026-02-15 19:20:00,0.2222,0.2727
+ORD-1032,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.25,0,0,,,2026-10-13 10:03:00,0.1833,0.2
+ORD-1033,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.0,0,0,,,2026-05-15 14:07:00,0.322,0.3636
+ORD-1034,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-05-28 11:42:00,0.7073,0.7273
+ORD-1035,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.0,0,0,,,2026-06-17 15:20:00,0.25,0.0714
+ORD-1036,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.25,0,0,,,2026-02-21 16:13:00,0.2264,0.1667
+ORD-1037,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.1,0,0,,,2026-05-20 13:18:00,0.322,0.3333
+ORD-1038,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,0,,,2026-10-12 08:42:00,0.2449,0.2667
+ORD-1039,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.0,0,0,,,2026-03-24 12:07:00,0.125,0.0667
+ORD-1040,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.25,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-05-30 16:31:00,0.5833,0.5
+ORD-1041,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,1,0,,,2026-02-06 08:21:00,0.2,0.2
+ORD-1042,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.0,0,0,,,2026-08-21 16:00:00,0.2931,0.5
+ORD-1043,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.0,0,0,,,2026-07-23 17:35:00,0.5833,0.5833
+ORD-1044,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.1,0,0,,,2026-02-04 22:22:00,0.2931,0.2
+ORD-1045,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.1,0,0,,,2026-08-11 17:47:00,0.3902,0.1111
+ORD-1046,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.0,0,0,,,2026-01-27 10:47:00,0.2931,0.25
+ORD-1047,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.0,0,0,,,2026-03-11 14:55:00,0.25,0.1429
+ORD-1048,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.15,0,0,,,2026-05-11 11:01:00,0.1833,0.1
+ORD-1049,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.0,0,0,,,2026-06-06 13:41:00,0.3902,0.3333
+ORD-1050,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.25,0,0,,,2026-01-29 09:56:00,0.322,0.375
+ORD-1051,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.1,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-06-24 14:38:00,0.2,0.2667
+ORD-1052,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.25,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-01-15 16:59:00,0.322,0.3636
+ORD-1053,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.0,0,0,,,2026-07-03 17:20:00,0.125,0.1053
+ORD-1054,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.15,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-23 14:42:00,0.5833,0.7143
+ORD-1055,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.0,0,0,,,2026-06-18 14:35:00,0.322,0.1429
+ORD-1056,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.15,0,0,,,2026-06-28 15:28:00,0.25,0.2353
+ORD-1057,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.0,0,0,,,2026-06-09 16:42:00,0.6585,0.375
+ORD-1058,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.0,0,0,,,2026-05-10 20:12:00,0.25,0.3636
+ORD-1059,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.15,1,0,,,2026-02-21 15:26:00,0.2931,0.4167
+ORD-1060,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-08-20 11:11:00,0.3902,0.3333
+ORD-1061,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.0,1,0,,,2026-03-18 15:08:00,0.322,0.375
+ORD-1062,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.15,0,0,,,2026-09-30 14:53:00,0.6585,0.6364
+ORD-1063,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.15,0,0,,,2026-05-21 21:40:00,0.125,0.0909
+ORD-1064,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.1,0,0,,,2026-06-10 11:17:00,0.2,0.0769
+ORD-1065,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-04 09:26:00,0.25,0.2
+ORD-1066,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-01-25 21:56:00,0.1538,0.1765
+ORD-1067,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.1,1,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-10-17 19:47:00,0.322,0.5455
+ORD-1068,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.1,0,0,,,2026-01-29 14:21:00,0.125,0.1053
+ORD-1069,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.15,0,0,,,2026-10-15 08:58:00,0.322,0.1429
+ORD-1070,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.0,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-04-18 08:16:00,0.322,0.5
+ORD-1071,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.1,0,0,,,2026-07-28 12:48:00,0.322,0.1765
+ORD-1072,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-05-09 18:04:00,0.1538,0.1765
+ORD-1073,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.0,0,0,,,2026-04-03 11:08:00,0.1833,0.2
+ORD-1074,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.0,0,0,,,2026-05-26 20:23:00,0.3276,0.2308
+ORD-1075,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-03-11 17:01:00,0.2449,0.1538
+ORD-1076,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.15,0,0,,,2026-04-26 09:37:00,0.2222,0.125
+ORD-1077,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.1,0,0,,,2026-03-17 20:36:00,0.7073,0.7273
+ORD-1078,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.1,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-08-18 21:31:00,0.1833,0.4167
+ORD-1079,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.15,0,0,,,2026-08-25 10:46:00,0.5833,0.5556
+ORD-1080,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.25,0,0,,,2026-09-10 14:52:00,0.322,0.3333
+ORD-1081,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.0,0,0,,,2026-09-02 11:48:00,0.2,0.25
+ORD-1082,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.15,0,0,,,2026-04-18 15:13:00,0.6585,0.7
+ORD-1083,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.25,0,0,,,2026-06-05 16:00:00,0.1364,0.2308
+ORD-1084,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.15,1,0,,,2026-05-18 19:30:00,0.322,0.1667
+ORD-1085,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,0,0,,,2026-08-10 19:15:00,0.3276,0.6429
+ORD-1086,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.25,0,0,,,2026-08-20 19:35:00,0.2222,0.125
+ORD-1087,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.1,0,0,,,2026-05-13 09:46:00,0.25,0.2
+ORD-1088,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.25,1,0,,,2026-04-19 11:13:00,0.3902,0.4545
+ORD-1089,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.25,0,0,,,2026-03-07 21:12:00,0.3276,0.3
+ORD-1090,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.1,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-02-07 08:35:00,0.2222,0.2727
+ORD-1091,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.15,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-09-12 15:28:00,0.2222,0.2727
+ORD-1092,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.1,0,0,,,2026-09-16 09:52:00,0.25,0.0714
+ORD-1093,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.25,0,0,,,2026-02-11 10:09:00,0.2264,0.2308
+ORD-1094,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.0,0,0,,,2026-08-16 17:38:00,0.2222,0.1667
+ORD-1095,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-06-20 17:39:00,0.7073,0.9
+ORD-1096,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.0,0,0,,,2026-05-01 18:13:00,0.1833,0.0714
+ORD-1097,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.0,0,0,,,2026-04-05 08:26:00,0.2,0.2
+ORD-1098,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.0,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-02-20 18:14:00,0.6585,0.7
+ORD-1099,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.25,0,0,,,2026-04-01 22:17:00,0.2,0.2667
+ORD-1100,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.1,1,0,,,2026-06-11 15:07:00,0.2931,0.4167
+ORD-1101,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.1,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-02-04 22:27:00,0.6585,0.6364
+ORD-1102,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-01-25 20:43:00,0.25,0.6
+ORD-1103,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.0,0,0,,,2026-08-29 22:17:00,0.2,0.2
+ORD-1104,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.15,0,0,,,2026-09-12 13:26:00,0.2449,0.2667
+ORD-1105,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.0,0,0,,,2026-09-25 12:42:00,0.25,0.2
+ORD-1106,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.0,1,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-10-05 21:00:00,0.322,0.5
+ORD-1107,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.0,0,0,,,2026-09-27 18:28:00,0.125,0.0909
+ORD-1108,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.0,0,0,,,2026-08-27 22:44:00,0.1833,0.1429
+ORD-1109,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.25,1,0,,,2026-04-06 12:35:00,0.3276,0.2308
+ORD-1110,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.0,0,0,,,2026-03-14 15:07:00,0.25,0.3333
+ORD-1111,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.1,0,0,,,2026-06-03 14:53:00,0.2931,0.2
+ORD-1112,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-19 12:49:00,0.3276,0.6429
+ORD-1113,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.25,0,0,,,2026-01-16 12:46:00,0.1538,0.1765
+ORD-1114,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.15,0,0,,,2026-08-31 16:30:00,0.2222,0.125
+ORD-1115,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.25,0,0,,,2026-06-28 21:12:00,0.1364,0.2308
+ORD-1116,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-07-29 14:42:00,0.7073,0.9
+ORD-1117,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.0,0,0,,,2026-07-03 21:06:00,0.2931,0.2
+ORD-1118,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.15,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-22 15:50:00,0.6585,0.8333
+ORD-1119,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.15,0,0,,,2026-07-02 21:43:00,0.2,0.25
+ORD-1120,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.15,0,0,,,2026-02-02 17:04:00,0.125,0.0909
+ORD-1121,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-08-30 10:44:00,0.7073,0.5714
+ORD-1122,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.0,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-20 16:26:00,0.2222,0.1667
+ORD-1123,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.25,0,0,,,2026-05-18 15:58:00,0.2449,0.4286
+ORD-1124,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.1,0,0,,,2026-01-19 22:51:00,0.2931,0.25
+ORD-1125,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.0,0,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-06-17 18:27:00,0.6585,0.6364
+ORD-1126,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-09-19 09:15:00,0.2,0.0769
+ORD-1127,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.1,0,0,,,2026-06-15 08:53:00,0.322,0.5
+ORD-1128,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,1,0,,,2026-09-26 21:57:00,0.322,0.1765
+ORD-1129,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.1,0,0,,,2026-04-22 17:16:00,0.2222,0.2727
+ORD-1130,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.0,1,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-03-23 09:58:00,0.2931,0.5
+ORD-1131,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.0,0,0,,,2026-10-18 22:23:00,0.2222,0.5
+ORD-1132,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XXL,Relaxed Fit,1,0.89,0.0,0,0,,,2026-09-18 20:18:00,0.322,0.4
+ORD-1133,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.0,0,1,Style Did Not Suit Customer,Silhouette didn't work for my height.,2026-07-21 09:50:00,0.25,0.3636
+ORD-1134,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.0,0,0,,,2026-05-29 17:24:00,0.322,0.4444
+ORD-1135,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-07-01 22:39:00,0.1364,0.0769
+ORD-1136,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.15,0,0,,,2026-06-18 18:26:00,0.7073,0.7273
+ORD-1137,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.0,1,1,Size Too Small,Way tighter than expected across the chest.,2026-05-15 22:34:00,0.5833,0.5
+ORD-1138,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.25,0,0,,,2026-04-04 22:26:00,0.2931,0.2
+ORD-1139,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.1,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-08-30 11:54:00,0.5833,0.5556
+ORD-1140,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.1,0,0,,,2026-07-17 08:25:00,0.1364,0.0769
+ORD-1141,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.15,0,1,Size Too Small,Way tighter than expected across the chest.,2026-02-09 20:21:00,0.2,0.2667
+ORD-1142,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,S,Regular Fit,0,0.6,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-05-05 21:55:00,0.7073,0.6667
+ORD-1143,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.25,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-03-22 16:16:00,0.7073,0.5714
+ORD-1144,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-06-29 08:11:00,0.2449,0.1538
+ORD-1145,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,0,0,,,2026-02-16 15:28:00,0.2,0.2
+ORD-1146,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,0,0,,,2026-02-06 19:50:00,0.1364,0.0769
+ORD-1147,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.0,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-08-21 18:06:00,0.322,0.3333
+ORD-1148,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-06-04 17:40:00,0.3276,0.6429
+ORD-1149,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.25,0,0,,,2026-09-04 16:38:00,0.125,0.0667
+ORD-1150,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.0,0,0,,,2026-05-05 14:28:00,0.1538,0.1111
+ORD-1151,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-08-21 13:42:00,0.7073,0.9
+ORD-1152,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.15,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-08-24 09:47:00,0.2,0.25
+ORD-1153,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,M,Athletic,1,0.93,0.25,0,0,,,2026-07-02 18:07:00,0.1364,0.0
+ORD-1154,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,0,0,,,2026-02-10 12:38:00,0.1538,0.1765
+ORD-1155,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.25,1,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-03-11 13:54:00,0.2222,0.5
+ORD-1156,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.1,1,0,,,2026-08-22 21:35:00,0.125,0.0667
+ORD-1157,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.1,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-07-07 13:00:00,0.125,0.2727
+ORD-1158,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.15,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-03-02 19:33:00,0.2449,0.4286
+ORD-1159,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.1,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-02-27 22:03:00,0.3902,0.3333
+ORD-1160,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.0,0,0,,,2026-06-03 15:42:00,0.2931,0.25
+ORD-1161,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,10,Athletic,1,0.87,0.15,0,0,,,2026-10-04 09:22:00,0.1538,0.0
+ORD-1162,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.25,0,0,,,2026-06-21 08:14:00,0.1538,0.1111
+ORD-1163,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.0,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-25 12:20:00,0.322,0.5
+ORD-1164,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-05-12 16:35:00,0.5833,0.5833
+ORD-1165,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,0,0,,,2026-09-07 22:04:00,0.1364,0.0769
+ORD-1166,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.15,0,0,,,2026-08-16 12:07:00,0.25,0.6
+ORD-1167,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.0,0,0,,,2026-09-07 21:44:00,0.322,0.4444
+ORD-1168,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,0,0,,,2026-08-08 16:05:00,0.1364,0.0769
+ORD-1169,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,0,,,2026-04-11 09:32:00,0.322,0.1765
+ORD-1170,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.1,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-03-31 11:06:00,0.5833,0.5
+ORD-1171,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.25,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-04-15 20:40:00,0.2931,0.25
+ORD-1172,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.25,0,0,,,2026-06-29 21:40:00,0.3276,0.6429
+ORD-1173,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.15,0,0,,,2026-06-19 20:17:00,0.25,0.0714
+ORD-1174,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.1,0,0,,,2026-02-03 08:23:00,0.1833,0.4167
+ORD-1175,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.0,0,0,,,2026-10-01 14:29:00,0.2222,0.1667
+ORD-1176,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.25,0,0,,,2026-06-28 17:30:00,0.125,0.2727
+ORD-1177,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.15,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-02-27 16:41:00,0.322,0.1667
+ORD-1178,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.15,0,0,,,2026-10-10 16:39:00,0.2449,0.1538
+ORD-1179,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.1,0,0,,,2026-07-07 18:38:00,0.2449,0.0
+ORD-1180,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.0,1,0,,,2026-07-31 12:16:00,0.1833,0.4167
+ORD-1181,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.0,1,0,,,2026-06-22 18:44:00,0.2931,0.25
+ORD-1182,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.0,0,0,,,2026-07-26 18:50:00,0.322,0.1429
+ORD-1183,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.25,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-07-19 08:23:00,0.25,0.0714
+ORD-1184,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.1,0,0,,,2026-09-20 11:14:00,0.2222,0.2727
+ORD-1185,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.0,1,0,,,2026-10-18 21:47:00,0.2931,0.25
+ORD-1186,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-17 21:44:00,0.322,0.3636
+ORD-1187,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,1,0,,,2026-05-16 15:39:00,0.2449,0.2667
+ORD-1188,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.0,0,0,,,2026-09-12 22:53:00,0.2222,0.0
+ORD-1189,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.25,0,0,,,2026-09-08 20:18:00,0.3902,0.4545
+ORD-1190,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.0,0,0,,,2026-03-26 21:16:00,0.322,0.5
+ORD-1191,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.25,0,0,,,2026-10-06 21:07:00,0.1833,0.1
+ORD-1192,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.1,0,0,,,2026-10-04 10:53:00,0.2222,0.1667
+ORD-1193,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.0,0,0,,,2026-07-12 22:01:00,0.1538,0.1111
+ORD-1194,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.1,0,0,,,2026-02-25 13:14:00,0.1538,0.1111
+ORD-1195,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.1,0,0,,,2026-03-26 08:18:00,0.25,0.2353
+ORD-1196,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.15,0,0,,,2026-01-17 22:05:00,0.3276,0.2
+ORD-1197,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,0,,,2026-10-12 14:07:00,0.25,0.2353
+ORD-1198,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.0,0,0,,,2026-09-06 09:07:00,0.2222,0.2727
+ORD-1199,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.25,0,0,,,2026-03-29 12:27:00,0.3276,0.1818
+ORD-1200,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.25,0,0,,,2026-02-27 16:23:00,0.25,0.3333
+ORD-1201,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.25,0,0,,,2026-08-02 21:30:00,0.2264,0.2
+ORD-1202,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.1,0,0,,,2026-07-16 20:04:00,0.1833,0.1
+ORD-1203,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,M,Athletic,1,0.93,0.0,0,0,,,2026-07-04 10:02:00,0.1364,0.0
+ORD-1204,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.0,0,0,,,2026-09-09 19:30:00,0.1364,0.2308
+ORD-1205,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.15,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-05 13:59:00,0.2449,0.4286
+ORD-1206,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.25,0,0,,,2026-02-02 20:41:00,0.2222,0.125
+ORD-1207,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.0,0,0,,,2026-07-03 12:07:00,0.3902,0.4545
+ORD-1208,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.15,0,0,,,2026-07-31 13:11:00,0.1364,0.1667
+ORD-1209,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.25,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-02-24 14:38:00,0.3276,0.6429
+ORD-1210,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.0,0,0,,,2026-06-15 12:28:00,0.2449,0.0
+ORD-1211,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,8,Athletic,1,0.87,0.1,0,0,,,2026-07-14 17:27:00,0.1538,0.4
+ORD-1212,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,1,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-04-06 08:09:00,0.2,0.2
+ORD-1213,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,0,0,,,2026-07-21 13:24:00,0.6585,0.8333
+ORD-1214,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,0,0,,,2026-07-24 15:48:00,0.1833,0.0714
+ORD-1215,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.1,0,0,,,2026-06-06 11:07:00,0.2264,0.2
+ORD-1216,P001,Heritage Oxford Slim Shirt,Shirts,68.0,M,Slim Fit,1,0.82,0.15,0,0,,,2026-03-16 12:49:00,0.25,0.0
+ORD-1217,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.25,0,0,,,2026-09-23 11:07:00,0.2,0.0769
+ORD-1218,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.15,0,0,,,2026-06-27 18:22:00,0.2931,0.4167
+ORD-1219,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.1,0,0,,,2026-04-14 20:23:00,0.2264,0.2
+ORD-1220,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,0,0,,,2026-05-16 20:31:00,0.322,0.1667
+ORD-1221,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.1,0,0,,,2026-03-22 17:56:00,0.25,0.2353
+ORD-1222,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.15,0,0,,,2026-08-12 21:36:00,0.2264,0.1667
+ORD-1223,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,S,Oversized,1,0.9,0.0,0,0,,,2026-10-06 13:08:00,0.2264,0.3333
+ORD-1224,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.0,0,0,,,2026-02-12 21:07:00,0.125,0.1053
+ORD-1225,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,0,0,,,2026-05-10 13:33:00,0.322,0.1667
+ORD-1226,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.25,0,0,,,2026-06-19 17:34:00,0.2222,0.1667
+ORD-1227,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.25,0,0,,,2026-04-03 10:42:00,0.2264,0.2
+ORD-1228,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.0,1,1,Style Did Not Suit Customer,Silhouette didn't work for my height.,2026-05-02 20:36:00,0.25,0.6
+ORD-1229,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.15,0,0,,,2026-10-21 12:41:00,0.1538,0.0
+ORD-1230,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.15,0,0,,,2026-02-21 19:03:00,0.2222,0.0
+ORD-1231,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.15,0,0,,,2026-03-29 13:55:00,0.2449,0.2667
+ORD-1232,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.0,0,0,,,2026-10-05 16:06:00,0.25,0.2
+ORD-1233,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.1,0,0,,,2026-03-28 09:03:00,0.25,0.0714
+ORD-1234,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.15,0,0,,,2026-04-06 21:20:00,0.2222,0.0
+ORD-1235,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.15,0,0,,,2026-09-11 15:56:00,0.25,0.0714
+ORD-1236,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.15,1,0,,,2026-05-18 11:37:00,0.2222,0.0
+ORD-1237,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.15,1,0,,,2026-09-12 12:34:00,0.1364,0.0769
+ORD-1238,P001,Heritage Oxford Slim Shirt,Shirts,68.0,S,Slim Fit,1,0.82,0.1,0,0,,,2026-08-09 13:02:00,0.25,0.0
+ORD-1239,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.0,0,0,,,2026-06-11 09:24:00,0.322,0.4444
+ORD-1240,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.1,0,0,,,2026-03-16 10:06:00,0.322,0.375
+ORD-1241,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.1,0,0,,,2026-07-21 20:09:00,0.322,0.1765
+ORD-1242,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XL,Slim Fit,1,0.85,0.25,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-07-04 20:30:00,0.3902,0.6
+ORD-1243,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.25,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-04-08 14:39:00,0.322,0.375
+ORD-1244,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.25,0,0,,,2026-06-17 15:52:00,0.2222,0.125
+ORD-1245,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,0,,,2026-06-21 20:57:00,0.25,0.2353
+ORD-1246,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.25,0,0,,,2026-02-10 17:30:00,0.25,0.3333
+ORD-1247,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.0,0,1,Style Did Not Suit Customer,"Looked great on model, cut just didn't flatter my proportions.",2026-04-22 08:28:00,0.2449,0.2667
+ORD-1248,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.0,0,0,,,2026-09-13 21:54:00,0.25,0.1429
+ORD-1249,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.25,0,0,,,2026-09-16 16:24:00,0.1833,0.1429
+ORD-1250,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.25,0,0,,,2026-07-15 18:49:00,0.25,0.0714
+ORD-1251,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-06-16 11:19:00,0.2,0.0769
+ORD-1252,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.15,0,0,,,2026-07-12 16:59:00,0.2222,0.2727
+ORD-1253,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.25,0,0,,,2026-08-05 21:22:00,0.2,0.25
+ORD-1254,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.0,1,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-09-17 11:12:00,0.2931,0.25
+ORD-1255,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.1,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-05-17 11:03:00,0.125,0.0667
+ORD-1256,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-03-07 18:49:00,0.322,0.1667
+ORD-1257,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.0,0,0,,,2026-09-15 15:41:00,0.2931,0.4167
+ORD-1258,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.0,0,0,,,2026-03-01 18:36:00,0.3902,0.4545
+ORD-1259,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.0,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-08-06 20:31:00,0.7073,0.7273
+ORD-1260,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.0,0,0,,,2026-03-10 22:21:00,0.2449,0.0
+ORD-1261,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.25,0,0,,,2026-03-24 21:32:00,0.2222,0.0
+ORD-1262,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-05-26 19:11:00,0.6585,0.6364
+ORD-1263,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.25,0,0,,,2026-04-23 10:39:00,0.25,0.2353
+ORD-1264,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.0,0,0,,,2026-03-04 10:08:00,0.322,0.5455
+ORD-1265,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-07-02 12:37:00,0.3276,0.3
+ORD-1266,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-04-06 14:43:00,0.25,0.2353
+ORD-1267,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.1,0,0,,,2026-05-08 11:08:00,0.322,0.3333
+ORD-1268,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.25,0,0,,,2026-09-13 20:34:00,0.3276,0.2
+ORD-1269,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.25,0,0,,,2026-02-25 16:28:00,0.3902,0.1111
+ORD-1270,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.25,1,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-04-28 17:34:00,0.322,0.3333
+ORD-1271,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.25,0,0,,,2026-04-30 19:37:00,0.2931,0.25
+ORD-1272,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.15,0,0,,,2026-09-04 10:32:00,0.3276,0.2308
+ORD-1273,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,10,Athletic,1,0.87,0.25,0,0,,,2026-06-21 19:01:00,0.1538,0.0
+ORD-1274,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,0,,,2026-02-07 14:22:00,0.322,0.1765
+ORD-1275,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.0,0,0,,,2026-09-13 08:18:00,0.2264,0.2
+ORD-1276,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,8,Athletic,1,0.87,0.15,0,0,,,2026-07-29 15:55:00,0.1538,0.4
+ORD-1277,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.25,1,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-04-16 16:25:00,0.322,0.5455
+ORD-1278,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,0,0,,,2026-01-26 12:29:00,0.322,0.1667
+ORD-1279,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.0,0,0,,,2026-07-11 10:17:00,0.125,0.0909
+ORD-1280,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.15,1,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-05-18 11:04:00,0.3902,0.5714
+ORD-1281,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.0,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-05-14 16:13:00,0.5833,0.5833
+ORD-1282,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.1,0,0,,,2026-06-27 17:38:00,0.1833,0.1429
+ORD-1283,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.0,0,0,,,2026-10-08 11:26:00,0.25,0.0714
+ORD-1284,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.25,1,0,,,2026-04-14 18:43:00,0.2222,0.5
+ORD-1285,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.1,0,0,,,2026-07-29 20:33:00,0.1538,0.0
+ORD-1286,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.1,0,0,,,2026-10-17 15:15:00,0.25,0.1429
+ORD-1287,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,0,,,2026-02-13 16:26:00,0.7073,0.5714
+ORD-1288,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.15,0,0,,,2026-04-29 13:41:00,0.1538,0.0
+ORD-1289,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.0,0,0,,,2026-04-22 08:17:00,0.2264,0.2308
+ORD-1290,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.0,0,0,,,2026-04-21 20:48:00,0.322,0.1429
+ORD-1291,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.1,0,0,,,2026-01-22 11:59:00,0.125,0.1053
+ORD-1292,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.15,0,0,,,2026-04-29 14:58:00,0.3902,0.5714
+ORD-1293,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-05-28 13:32:00,0.7073,0.5714
+ORD-1294,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.15,1,0,,,2026-06-27 22:13:00,0.3276,0.6429
+ORD-1295,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.25,0,0,,,2026-03-30 08:16:00,0.1364,0.2308
+ORD-1296,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.0,0,0,,,2026-07-28 17:53:00,0.125,0.0909
+ORD-1297,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.1,0,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-09-23 15:10:00,0.7073,0.9
+ORD-1298,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,M,Athletic,1,0.93,0.25,0,0,,,2026-10-19 18:03:00,0.1364,0.0
+ORD-1299,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.0,0,0,,,2026-02-08 20:00:00,0.322,0.3636
+ORD-1300,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,8,Athletic,1,0.87,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-09-30 15:23:00,0.1538,0.4
+ORD-1301,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.25,0,0,,,2026-09-21 08:00:00,0.1833,0.0714
+ORD-1302,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.25,1,0,,,2026-10-16 12:01:00,0.125,0.0909
+ORD-1303,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-18 11:39:00,0.322,0.375
+ORD-1304,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.1,0,0,,,2026-02-24 13:25:00,0.322,0.3333
+ORD-1305,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.0,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-01-31 09:25:00,0.6585,0.375
+ORD-1306,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.0,0,0,,,2026-04-12 09:31:00,0.322,0.5455
+ORD-1307,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,12,Athletic,1,0.87,0.25,0,0,,,2026-03-04 22:33:00,0.1538,0.3333
+ORD-1308,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.25,0,0,,,2026-02-07 22:04:00,0.1833,0.1429
+ORD-1309,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.1,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-08-06 22:04:00,0.2,0.2
+ORD-1310,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.25,0,0,,,2026-08-02 18:57:00,0.2222,0.2727
+ORD-1311,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.0,0,0,,,2026-02-24 16:47:00,0.125,0.0667
+ORD-1312,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,1,0,,,2026-07-08 17:49:00,0.1364,0.0769
+ORD-1313,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.1,1,0,,,2026-09-02 15:14:00,0.322,0.1765
+ORD-1314,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.25,0,0,,,2026-02-27 20:39:00,0.1364,0.1667
+ORD-1315,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.0,0,0,,,2026-07-28 19:50:00,0.2222,0.2727
+ORD-1316,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.1,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-08-30 13:48:00,0.2931,0.5
+ORD-1317,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.0,0,0,,,2026-10-04 14:06:00,0.2,0.2
+ORD-1318,P001,Heritage Oxford Slim Shirt,Shirts,68.0,S,Slim Fit,1,0.82,0.0,0,0,,,2026-06-30 21:24:00,0.25,0.0
+ORD-1319,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,0,,,2026-05-19 17:33:00,0.25,0.2353
+ORD-1320,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,0,,,2026-09-24 10:04:00,0.2449,0.2667
+ORD-1321,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,0,,,2026-02-23 13:16:00,0.2449,0.2667
+ORD-1322,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-08-05 13:53:00,0.7073,0.9
+ORD-1323,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.15,0,0,,,2026-03-25 12:20:00,0.322,0.1765
+ORD-1324,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.15,0,0,,,2026-06-13 19:44:00,0.3902,0.3333
+ORD-1325,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.1,0,0,,,2026-08-04 13:07:00,0.3276,0.1818
+ORD-1326,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XL,Slim Fit,1,0.85,0.0,0,0,,,2026-01-28 19:29:00,0.3902,0.6
+ORD-1327,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.0,0,0,,,2026-08-12 18:31:00,0.3902,0.3333
+ORD-1328,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.1,0,0,,,2026-08-19 20:24:00,0.2931,0.5
+ORD-1329,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.15,0,0,,,2026-10-15 16:59:00,0.2264,0.2308
+ORD-1330,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.1,1,0,,,2026-10-16 17:40:00,0.1538,0.0
+ORD-1331,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.1,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-08-07 20:21:00,0.2264,0.1667
+ORD-1332,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.1,1,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-05-08 15:23:00,0.1538,0.1111
+ORD-1333,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.25,0,0,,,2026-04-02 13:01:00,0.322,0.5455
+ORD-1334,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.0,0,1,Style Did Not Suit Customer,"Looked great on model, cut just didn't flatter my proportions.",2026-07-12 12:21:00,0.3276,0.2308
+ORD-1335,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.1,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-09-03 13:04:00,0.6585,0.375
+ORD-1336,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-04-09 22:47:00,0.2222,0.1667
+ORD-1337,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,S,Regular Fit,0,0.6,0.1,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-08-10 18:11:00,0.7073,0.6667
+ORD-1338,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.25,0,0,,,2026-09-02 17:27:00,0.2449,0.2667
+ORD-1339,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.0,0,0,,,2026-02-16 17:06:00,0.322,0.4444
+ORD-1340,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.0,0,0,,,2026-05-29 18:55:00,0.125,0.1053
+ORD-1341,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.1,0,0,,,2026-08-03 17:07:00,0.3276,0.1818
+ORD-1342,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.25,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-02-27 18:08:00,0.1364,0.2308
+ORD-1343,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-08-01 14:38:00,0.25,0.3636
+ORD-1344,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,34,Slim Fit,1,0.88,0.0,0,0,,,2026-10-17 19:58:00,0.2931,0.0
+ORD-1345,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,0,,,2026-09-02 17:03:00,0.2449,0.4286
+ORD-1346,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,0,0,,,2026-09-30 18:31:00,0.1364,0.0769
+ORD-1347,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,12,Athletic,1,0.87,0.15,0,0,,,2026-02-26 17:01:00,0.1538,0.3333
+ORD-1348,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,1,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-09-25 16:32:00,0.7073,0.5714
+ORD-1349,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.25,0,0,,,2026-07-21 16:52:00,0.5833,0.5833
+ORD-1350,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.15,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-06-16 21:02:00,0.1833,0.1
+ORD-1351,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.0,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-05-02 20:47:00,0.6585,0.6364
+ORD-1352,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.0,0,0,,,2026-04-30 20:03:00,0.1364,0.1667
+ORD-1353,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.0,0,0,,,2026-06-13 12:36:00,0.1364,0.2308
+ORD-1354,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,0,0,,,2026-06-05 21:41:00,0.2,0.2
+ORD-1355,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-08-04 15:09:00,0.2931,0.5
+ORD-1356,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-03-03 14:32:00,0.2,0.0769
+ORD-1357,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.15,0,0,,,2026-01-16 21:49:00,0.2,0.25
+ORD-1358,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.1,0,0,,,2026-10-15 14:13:00,0.2264,0.2308
+ORD-1359,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,8,Athletic,1,0.87,0.1,0,0,,,2026-07-06 16:36:00,0.1538,0.4
+ORD-1360,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,34,Slim Fit,1,0.88,0.1,0,0,,,2026-02-08 08:06:00,0.2931,0.0
+ORD-1361,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-04-28 19:58:00,0.6585,0.8333
+ORD-1362,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.1,0,1,Size Too Small,Way tighter than expected across the chest.,2026-07-24 18:57:00,0.2931,0.5
+ORD-1363,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.1,0,0,,,2026-05-14 14:41:00,0.2449,0.1538
+ORD-1364,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.15,1,1,Size Too Large,Length and waist were much wider than standard.,2026-08-30 08:00:00,0.2264,0.1667
+ORD-1365,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.15,0,0,,,2026-09-16 09:14:00,0.25,0.3636
+ORD-1366,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-03-26 14:49:00,0.322,0.4444
+ORD-1367,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.0,0,1,Size Too Large,Length and waist were much wider than standard.,2026-04-09 15:22:00,0.2931,0.5
+ORD-1368,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.25,0,0,,,2026-05-06 09:57:00,0.3902,0.1111
+ORD-1369,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.25,0,0,,,2026-07-13 14:20:00,0.5833,0.5
+ORD-1370,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.0,0,1,Size Too Large,Length and waist were much wider than standard.,2026-06-09 20:44:00,0.2931,0.25
+ORD-1371,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.25,0,0,,,2026-08-03 12:41:00,0.25,0.2353
+ORD-1372,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.0,0,0,,,2026-02-20 16:56:00,0.1833,0.1429
+ORD-1373,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,0,,,2026-08-18 13:34:00,0.25,0.2353
+ORD-1374,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-05-05 08:59:00,0.2449,0.2667
+ORD-1375,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.25,0,0,,,2026-08-19 19:25:00,0.1833,0.1
+ORD-1376,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.0,0,0,,,2026-06-22 09:32:00,0.2264,0.2
+ORD-1377,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.15,0,0,,,2026-02-17 12:44:00,0.3902,0.1111
+ORD-1378,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,12,Athletic,1,0.87,0.0,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-03-15 15:39:00,0.1538,0.3333
+ORD-1379,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-01-20 10:31:00,0.1833,0.4167
+ORD-1380,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.0,0,0,,,2026-06-01 19:56:00,0.1364,0.2308
+ORD-1381,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-02-23 15:29:00,0.5833,0.5833
+ORD-1382,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.25,1,1,Size Too Small,Way tighter than expected across the chest.,2026-03-15 11:47:00,0.322,0.3333
+ORD-1383,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.0,1,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-04-01 10:59:00,0.322,0.3636
+ORD-1384,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,0,0,,,2026-05-22 14:58:00,0.1833,0.0714
+ORD-1385,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.25,0,0,,,2026-09-29 18:57:00,0.25,0.2
+ORD-1386,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.25,0,0,,,2026-08-08 09:56:00,0.1833,0.1429
+ORD-1387,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.1,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-07-22 11:18:00,0.6585,0.6364
+ORD-1388,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.1,0,0,,,2026-09-24 20:49:00,0.2222,0.125
+ORD-1389,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XL,Slim Fit,1,0.85,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-05-14 16:22:00,0.3902,0.6
+ORD-1390,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.15,1,0,,,2026-06-21 09:13:00,0.25,0.2353
+ORD-1391,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,0,0,,,2026-03-28 19:17:00,0.322,0.1667
+ORD-1392,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.25,0,0,,,2026-07-24 15:47:00,0.2264,0.1667
+ORD-1393,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.0,1,0,,,2026-08-04 09:37:00,0.2264,0.2
+ORD-1394,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.0,0,0,,,2026-05-28 21:20:00,0.1833,0.1
+ORD-1395,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.1,0,0,,,2026-06-03 11:04:00,0.322,0.1429
+ORD-1396,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.25,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-09-10 13:26:00,0.3902,0.1111
+ORD-1397,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-03-02 10:51:00,0.5833,0.7143
+ORD-1398,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.1,1,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-08-05 16:03:00,0.2222,0.125
+ORD-1399,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.0,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-05-22 09:29:00,0.2222,0.5
+ORD-1400,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.0,0,0,,,2026-05-08 10:12:00,0.5833,0.5
+ORD-1401,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,0,,,2026-05-27 22:52:00,0.322,0.1765
+ORD-1402,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.0,0,0,,,2026-08-30 20:08:00,0.2264,0.1667
+ORD-1403,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.15,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-08-05 15:01:00,0.2264,0.25
+ORD-1404,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.1,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-08-31 22:09:00,0.322,0.1429
+ORD-1405,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.0,0,0,,,2026-09-27 14:56:00,0.1833,0.0714
+ORD-1406,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.1,1,1,Size Too Large,Length and waist were much wider than standard.,2026-10-11 11:40:00,0.125,0.0909
+ORD-1407,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.1,0,0,,,2026-09-20 13:58:00,0.125,0.2727
+ORD-1408,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-06-07 08:51:00,0.322,0.3333
+ORD-1409,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.25,0,0,,,2026-04-06 09:15:00,0.3276,0.1818
+ORD-1410,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,0,,,2026-05-07 17:54:00,0.7073,0.5714
+ORD-1411,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,1,Size Too Large,Length and waist were much wider than standard.,2026-07-17 22:37:00,0.322,0.1765
+ORD-1412,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.25,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-10-19 12:11:00,0.25,0.2353
+ORD-1413,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.0,1,0,,,2026-01-25 16:30:00,0.3276,0.2308
+ORD-1414,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,0,,,2026-07-08 19:11:00,0.25,0.2353
+ORD-1415,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.25,1,0,,,2026-03-28 20:07:00,0.25,0.3636
+ORD-1416,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.1,0,0,,,2026-08-05 17:06:00,0.322,0.3333
+ORD-1417,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.0,0,0,,,2026-08-26 20:40:00,0.25,0.2
+ORD-1418,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.25,0,0,,,2026-07-16 11:42:00,0.3276,0.3
+ORD-1419,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-08-03 21:49:00,0.2449,0.2667
+ORD-1420,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.25,0,0,,,2026-03-09 22:31:00,0.1833,0.1429
+ORD-1421,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.0,0,0,,,2026-06-27 10:40:00,0.2931,0.25
+ORD-1422,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.1,0,0,,,2026-02-18 13:16:00,0.2264,0.25
+ORD-1423,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.15,1,0,,,2026-04-10 22:26:00,0.5833,0.5833
+ORD-1424,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.15,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-08 15:04:00,0.3276,0.6429
+ORD-1425,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.1,1,0,,,2026-02-21 13:10:00,0.1833,0.4167
+ORD-1426,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.25,0,0,,,2026-03-03 13:38:00,0.322,0.1429
+ORD-1427,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.0,0,0,,,2026-08-25 10:03:00,0.3276,0.2308
+ORD-1428,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-06-08 12:15:00,0.5833,0.7143
+ORD-1429,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.25,0,0,,,2026-04-03 08:23:00,0.5833,0.5833
+ORD-1430,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XL,Slim Fit,1,0.82,0.25,1,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-04-12 18:18:00,0.25,0.5
+ORD-1431,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.1,0,0,,,2026-09-13 15:57:00,0.2264,0.2308
+ORD-1432,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,0,0,,,2026-07-29 13:11:00,0.2,0.2
+ORD-1433,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.15,0,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-02-15 10:48:00,0.6585,0.8333
+ORD-1434,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-15 21:24:00,0.5833,0.5833
+ORD-1435,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.15,0,0,,,2026-05-15 15:19:00,0.322,0.375
+ORD-1436,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.0,0,0,,,2026-10-06 20:36:00,0.2264,0.2308
+ORD-1437,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.15,0,1,Style Did Not Suit Customer,"Looked great on model, cut just didn't flatter my proportions.",2026-04-23 10:02:00,0.2931,0.4167
+ORD-1438,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.15,0,0,,,2026-03-31 21:38:00,0.1538,0.1111
+ORD-1439,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.0,0,1,Size Too Large,Length and waist were much wider than standard.,2026-06-30 21:17:00,0.2,0.25
+ORD-1440,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.0,0,0,,,2026-10-09 20:26:00,0.322,0.375
+ORD-1441,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.25,0,0,,,2026-03-07 22:06:00,0.5833,0.5556
+ORD-1442,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.1,0,0,,,2026-05-30 14:41:00,0.5833,0.7143
+ORD-1443,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.0,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-02-03 14:56:00,0.3276,0.1818
+ORD-1444,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.15,1,0,,,2026-07-24 08:21:00,0.25,0.0714
+ORD-1445,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.15,0,0,,,2026-03-06 21:14:00,0.2222,0.5
+ORD-1446,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.15,0,0,,,2026-06-28 12:46:00,0.2931,0.25
+ORD-1447,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.0,0,0,,,2026-08-11 19:31:00,0.1538,0.0
+ORD-1448,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.25,0,0,,,2026-02-17 12:45:00,0.322,0.3333
+ORD-1449,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.25,0,0,,,2026-01-29 10:12:00,0.322,0.375
+ORD-1450,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.15,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-06-04 13:52:00,0.3902,0.5714
+ORD-1451,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.0,0,0,,,2026-05-18 13:31:00,0.6585,0.7
+ORD-1452,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.15,0,0,,,2026-07-13 13:10:00,0.6585,0.375
+ORD-1453,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-05-08 18:14:00,0.2,0.2
+ORD-1454,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.25,0,1,Size Too Small,Way tighter than expected across the chest.,2026-09-14 22:08:00,0.3902,0.4545
+ORD-1455,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.25,0,0,,,2026-06-20 19:45:00,0.2449,0.1538
+ORD-1456,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.1,0,0,,,2026-05-06 15:19:00,0.2,0.0769
+ORD-1457,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XXL,Relaxed Fit,1,0.89,0.0,0,1,Style Did Not Suit Customer,Silhouette didn't work for my height.,2026-06-08 12:43:00,0.322,0.4
+ORD-1458,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.1,1,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-06-16 11:09:00,0.5833,0.5556
+ORD-1459,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.25,0,0,,,2026-06-27 18:08:00,0.322,0.1667
+ORD-1460,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XL,Slim Fit,1,0.82,0.1,0,0,,,2026-08-10 14:47:00,0.25,0.5
+ORD-1461,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.25,0,0,,,2026-07-09 19:45:00,0.1833,0.0714
+ORD-1462,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.1,0,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-04-17 12:06:00,0.7073,0.9
+ORD-1463,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.25,0,0,,,2026-04-18 18:57:00,0.3276,0.2
+ORD-1464,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.0,0,0,,,2026-06-21 14:50:00,0.25,0.3636
+ORD-1465,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.1,0,0,,,2026-03-16 15:03:00,0.25,0.2
+ORD-1466,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.25,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-06-16 14:03:00,0.2264,0.2308
+ORD-1467,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.1,0,0,,,2026-09-06 10:20:00,0.2931,0.25
+ORD-1468,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-02-13 08:28:00,0.2449,0.1538
+ORD-1469,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,0,0,,,2026-04-06 15:50:00,0.2,0.2667
+ORD-1470,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,S,Oversized,1,0.9,0.15,0,0,,,2026-09-16 14:00:00,0.2264,0.3333
+ORD-1471,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.1,0,0,,,2026-06-28 20:53:00,0.1833,0.0714
+ORD-1472,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,1,0,,,2026-05-22 11:44:00,0.322,0.1667
+ORD-1473,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.15,0,0,,,2026-06-20 10:04:00,0.1364,0.2308
+ORD-1474,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.15,0,0,,,2026-10-10 13:27:00,0.1833,0.4167
+ORD-1475,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.15,0,0,,,2026-04-21 10:58:00,0.2931,0.25
+ORD-1476,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-03-19 13:45:00,0.322,0.4444
+ORD-1477,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.1,0,0,,,2026-02-08 17:03:00,0.1833,0.1
+ORD-1478,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.0,1,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-05-24 15:44:00,0.5833,0.5833
+ORD-1479,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.0,0,0,,,2026-03-07 18:33:00,0.2931,0.25
+ORD-1480,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,0,0,,,2026-03-16 12:07:00,0.2,0.2667
+ORD-1481,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.0,0,0,,,2026-10-09 11:22:00,0.5833,0.5556
+ORD-1482,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.25,0,0,,,2026-05-01 19:59:00,0.1538,0.1765
+ORD-1483,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.0,0,0,,,2026-03-12 21:36:00,0.3276,0.3
+ORD-1484,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.25,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-05-13 15:18:00,0.3276,0.2
+ORD-1485,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,1,0,,,2026-06-12 13:51:00,0.2,0.0769
+ORD-1486,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.0,0,0,,,2026-02-07 08:54:00,0.25,0.1429
+ORD-1487,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.1,0,0,,,2026-08-27 17:17:00,0.2931,0.5
+ORD-1488,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.0,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-06-03 21:24:00,0.2264,0.25
+ORD-1489,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-04-06 09:26:00,0.3276,0.6429
+ORD-1490,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.0,0,0,,,2026-07-17 17:01:00,0.3276,0.1818
+ORD-1491,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.0,0,0,,,2026-08-28 08:04:00,0.2931,0.2
+ORD-1492,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.25,1,0,,,2026-05-09 18:55:00,0.2,0.25
+ORD-1493,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.25,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-09-18 13:42:00,0.25,0.6
+ORD-1494,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.25,0,0,,,2026-02-11 08:41:00,0.322,0.1429
+ORD-1495,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-07-03 12:03:00,0.2449,0.2667
+ORD-1496,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.15,0,0,,,2026-05-15 09:29:00,0.322,0.1667
+ORD-1497,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.15,1,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-01-24 09:25:00,0.6585,0.7
+ORD-1498,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.0,0,0,,,2026-06-19 22:32:00,0.1538,0.1111
+ORD-1499,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.15,0,0,,,2026-07-20 21:03:00,0.125,0.1053
+ORD-1500,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.25,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-09-03 09:06:00,0.7073,0.9
+ORD-1501,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.1,0,1,Size Too Small,Way tighter than expected across the chest.,2026-02-07 22:10:00,0.7073,0.7273
+ORD-1502,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.15,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-03-17 22:54:00,0.3276,0.2
+ORD-1503,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.0,0,0,,,2026-03-11 20:26:00,0.322,0.1429
+ORD-1504,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,0,0,,,2026-09-30 10:31:00,0.1833,0.0714
+ORD-1505,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.25,0,0,,,2026-09-19 22:32:00,0.25,0.3333
+ORD-1506,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-06-28 16:56:00,0.2449,0.4286
+ORD-1507,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.0,0,0,,,2026-07-09 12:28:00,0.322,0.5455
+ORD-1508,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.25,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-05-06 11:13:00,0.2931,0.25
+ORD-1509,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.0,0,0,,,2026-04-16 16:34:00,0.2222,0.5
+ORD-1510,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.25,0,0,,,2026-08-16 18:47:00,0.25,0.3636
+ORD-1511,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.15,0,0,,,2026-10-09 09:01:00,0.125,0.0667
+ORD-1512,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.0,1,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-06-10 18:16:00,0.322,0.1429
+ORD-1513,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.1,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-09-03 09:39:00,0.2931,0.4167
+ORD-1514,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.25,0,0,,,2026-10-03 20:50:00,0.125,0.1053
+ORD-1515,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.15,0,0,,,2026-06-24 16:03:00,0.2222,0.1667
+ORD-1516,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.15,0,0,,,2026-07-22 20:37:00,0.25,0.2353
+ORD-1517,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.0,0,0,,,2026-04-15 18:04:00,0.125,0.1053
+ORD-1518,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,0,,,2026-08-22 12:35:00,0.2449,0.4286
+ORD-1519,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.1,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-02-04 10:59:00,0.2,0.2667
+ORD-1520,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.25,1,0,,,2026-06-18 15:50:00,0.25,0.6
+ORD-1521,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.1,1,0,,,2026-04-19 16:04:00,0.125,0.0667
+ORD-1522,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.25,0,0,,,2026-07-12 11:56:00,0.322,0.1667
+ORD-1523,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.1,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-01-19 09:42:00,0.3902,0.4545
+ORD-1524,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.25,0,0,,,2026-05-19 08:43:00,0.1364,0.1667
+ORD-1525,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.0,0,0,,,2026-10-18 19:18:00,0.25,0.1429
+ORD-1526,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.1,0,0,,,2026-10-02 15:31:00,0.25,0.3333
+ORD-1527,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.0,0,0,,,2026-02-26 09:10:00,0.1833,0.4167
+ORD-1528,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.0,0,0,,,2026-05-04 21:43:00,0.125,0.2727
+ORD-1529,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.15,0,0,,,2026-02-20 19:43:00,0.1538,0.1111
+ORD-1530,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.1,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-23 16:04:00,0.2931,0.4167
+ORD-1531,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.15,0,0,,,2026-08-24 13:01:00,0.7073,0.5714
+ORD-1532,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.0,1,0,,,2026-02-16 20:47:00,0.322,0.1429
+ORD-1533,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.25,0,1,Color Different From Photo,Expected crisp white but arrived slightly off-white cream.,2026-02-28 12:48:00,0.1833,0.2
+ORD-1534,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-08-03 20:51:00,0.6585,0.7
+ORD-1535,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.0,0,0,,,2026-07-25 08:35:00,0.125,0.0667
+ORD-1536,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.0,0,0,,,2026-08-04 16:35:00,0.125,0.1053
+ORD-1537,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.1,0,0,,,2026-10-04 10:10:00,0.2264,0.25
+ORD-1538,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.1,0,0,,,2026-04-17 18:51:00,0.2449,0.4286
+ORD-1539,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.25,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-03-06 11:46:00,0.1833,0.0714
+ORD-1540,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-06-26 15:28:00,0.3276,0.3
+ORD-1541,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.25,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-08-22 10:00:00,0.25,0.6
+ORD-1542,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.15,0,0,,,2026-07-18 10:43:00,0.25,0.0714
+ORD-1543,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.1,0,0,,,2026-09-21 16:06:00,0.25,0.1429
+ORD-1544,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-04-25 12:46:00,0.2449,0.1538
+ORD-1545,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.25,0,0,,,2026-08-10 20:37:00,0.2264,0.1667
+ORD-1546,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.25,0,0,,,2026-10-18 15:41:00,0.3902,0.5714
+ORD-1547,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,32,Slim Fit,1,0.88,0.25,0,0,,,2026-06-12 10:29:00,0.2931,0.25
+ORD-1548,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XXL,Relaxed Fit,1,0.89,0.1,1,0,,,2026-05-17 21:51:00,0.322,0.4
+ORD-1549,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,0,,,2026-03-30 19:46:00,0.2449,0.4286
+ORD-1550,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.15,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-05 18:13:00,0.3276,0.3
+ORD-1551,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.15,0,0,,,2026-02-04 18:20:00,0.322,0.3333
+ORD-1552,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.1,0,0,,,2026-04-14 14:41:00,0.5833,0.7143
+ORD-1553,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,0,,,2026-07-26 22:14:00,0.322,0.1765
+ORD-1554,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.1,0,0,,,2026-09-18 22:38:00,0.322,0.375
+ORD-1555,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-06-07 11:09:00,0.25,0.3333
+ORD-1556,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,0,,,2026-08-15 20:21:00,0.2449,0.4286
+ORD-1557,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.15,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-01-26 11:02:00,0.5833,0.5556
+ORD-1558,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,34,Slim Fit,1,0.88,0.0,0,0,,,2026-02-04 22:36:00,0.2931,0.0
+ORD-1559,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.0,0,0,,,2026-08-10 17:36:00,0.2931,0.4167
+ORD-1560,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,0,,,2026-09-13 21:30:00,0.25,0.2353
+ORD-1561,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.25,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-10-03 12:10:00,0.2449,0.4286
+ORD-1562,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-01-23 11:33:00,0.25,0.1429
+ORD-1563,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.25,0,1,Size Too Large,Length and waist were much wider than standard.,2026-02-03 22:50:00,0.322,0.375
+ORD-1564,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.0,1,0,,,2026-10-18 21:00:00,0.125,0.2727
+ORD-1565,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.0,0,0,,,2026-08-22 11:51:00,0.1538,0.0
+ORD-1566,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.25,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-05-14 22:54:00,0.3276,0.6429
+ORD-1567,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.25,0,0,,,2026-04-21 08:45:00,0.2264,0.25
+ORD-1568,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.25,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-08-12 13:06:00,0.25,0.3333
+ORD-1569,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.1,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-06-05 18:25:00,0.2931,0.2
+ORD-1570,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.25,0,0,,,2026-07-23 16:35:00,0.3902,0.3333
+ORD-1571,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.25,0,0,,,2026-08-06 19:08:00,0.3276,0.3
+ORD-1572,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-02-10 10:24:00,0.5833,0.5
+ORD-1573,P001,Heritage Oxford Slim Shirt,Shirts,68.0,S,Slim Fit,1,0.82,0.15,0,0,,,2026-08-25 09:04:00,0.25,0.0
+ORD-1574,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.25,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-10-08 12:45:00,0.2,0.2667
+ORD-1575,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-06-10 11:02:00,0.1833,0.1429
+ORD-1576,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XXL,Relaxed Fit,1,0.89,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-01-15 10:05:00,0.322,0.4
+ORD-1577,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.15,0,0,,,2026-04-27 16:00:00,0.2,0.0769
+ORD-1578,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.25,0,0,,,2026-07-12 13:52:00,0.2264,0.1667
+ORD-1579,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,0,0,,,2026-08-09 17:00:00,0.2,0.2667
+ORD-1580,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,0,0,,,2026-09-29 12:21:00,0.2,0.2667
+ORD-1581,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.25,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-09-19 20:15:00,0.5833,0.7143
+ORD-1582,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.25,0,0,,,2026-09-18 09:16:00,0.25,0.1429
+ORD-1583,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.0,0,0,,,2026-05-12 20:20:00,0.2264,0.2308
+ORD-1584,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.0,0,0,,,2026-05-29 11:18:00,0.1538,0.1765
+ORD-1585,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.1,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-06-24 13:13:00,0.2264,0.2308
+ORD-1586,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,0,0,,,2026-04-27 11:47:00,0.2,0.2667
+ORD-1587,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,0,,,2026-07-16 10:49:00,0.7073,0.5714
+ORD-1588,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.15,0,0,,,2026-10-19 08:54:00,0.5833,0.5833
+ORD-1589,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.15,0,0,,,2026-06-04 15:11:00,0.3276,0.3
+ORD-1590,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.25,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-09-16 16:02:00,0.322,0.3333
+ORD-1591,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.0,0,0,,,2026-03-17 19:33:00,0.322,0.3333
+ORD-1592,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.0,0,0,,,2026-07-28 17:06:00,0.6585,0.6364
+ORD-1593,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.1,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-09-13 17:21:00,0.25,0.2
+ORD-1594,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,M,Athletic,1,0.93,0.0,0,0,,,2026-07-24 13:54:00,0.1364,0.0
+ORD-1595,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.25,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-03-07 19:17:00,0.322,0.1765
+ORD-1596,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.0,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-09-14 20:00:00,0.7073,0.9
+ORD-1597,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.25,0,0,,,2026-06-25 20:31:00,0.2449,0.2667
+ORD-1598,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-14 11:52:00,0.2222,0.5
+ORD-1599,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-07-05 12:23:00,0.2,0.0769
+ORD-1600,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-04-26 17:36:00,0.1364,0.2308
+ORD-1601,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.1,0,0,,,2026-10-03 15:49:00,0.125,0.1053
+ORD-1602,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.1,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-07-06 14:40:00,0.6585,0.8333
+ORD-1603,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.1,1,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-05-31 17:41:00,0.322,0.4444
+ORD-1604,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.1,0,0,,,2026-10-08 15:26:00,0.322,0.1765
+ORD-1605,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,0,,,2026-05-23 19:44:00,0.2449,0.4286
+ORD-1606,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,S,Oversized,1,0.9,0.0,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-10-22 08:01:00,0.2264,0.3333
+ORD-1607,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-08-02 12:14:00,0.322,0.5
+ORD-1608,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-02-01 18:22:00,0.7073,0.5714
+ORD-1609,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.25,0,0,,,2026-10-22 15:08:00,0.25,0.1429
+ORD-1610,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.15,0,0,,,2026-08-25 16:40:00,0.125,0.1053
+ORD-1611,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.15,0,0,,,2026-03-01 15:19:00,0.125,0.0667
+ORD-1612,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.1,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-07-10 12:30:00,0.1364,0.1667
+ORD-1613,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.15,0,0,,,2026-09-16 12:00:00,0.125,0.2727
+ORD-1614,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.0,0,0,,,2026-04-21 14:56:00,0.1538,0.1765
+ORD-1615,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.0,0,0,,,2026-08-02 21:24:00,0.125,0.0909
+ORD-1616,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,1,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-06-03 12:41:00,0.7073,0.5714
+ORD-1617,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.0,0,0,,,2026-06-12 09:40:00,0.125,0.0667
+ORD-1618,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-02-09 16:01:00,0.6585,0.7
+ORD-1619,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-01-19 11:05:00,0.2449,0.1538
+ORD-1620,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.1,0,0,,,2026-09-27 13:29:00,0.2931,0.4167
+ORD-1621,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.0,1,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-10-20 15:11:00,0.1833,0.4167
+ORD-1622,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-07-31 20:28:00,0.3902,0.4545
+ORD-1623,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.0,0,1,Color Different From Photo,Expected crisp white but arrived slightly off-white cream.,2026-08-02 18:19:00,0.7073,0.7273
+ORD-1624,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.0,0,0,,,2026-10-08 09:16:00,0.25,0.0714
+ORD-1625,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.0,0,0,,,2026-05-06 09:15:00,0.3276,0.3
+ORD-1626,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.1,1,0,,,2026-08-05 20:15:00,0.1538,0.1765
+ORD-1627,P001,Heritage Oxford Slim Shirt,Shirts,68.0,S,Slim Fit,1,0.82,0.15,0,0,,,2026-04-04 13:49:00,0.25,0.0
+ORD-1628,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,S,Oversized,1,0.9,0.0,0,0,,,2026-07-07 22:48:00,0.2264,0.3333
+ORD-1629,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.0,0,0,,,2026-03-10 10:31:00,0.1833,0.2
+ORD-1630,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.1,0,0,,,2026-08-27 19:12:00,0.7073,0.5714
+ORD-1631,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XL,Slim Fit,1,0.82,0.0,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-08-27 16:18:00,0.25,0.5
+ORD-1632,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.0,0,0,,,2026-06-29 19:29:00,0.125,0.0909
+ORD-1633,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,1,0,,,2026-05-29 16:23:00,0.2,0.2667
+ORD-1634,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.25,0,1,Size Too Small,Way tighter than expected across the chest.,2026-07-20 20:39:00,0.6585,0.8333
+ORD-1635,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.25,0,0,,,2026-04-22 16:43:00,0.7073,0.5714
+ORD-1636,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.1,0,0,,,2026-06-28 09:06:00,0.3276,0.1818
+ORD-1637,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.0,1,1,Size Too Small,Way tighter than expected across the chest.,2026-09-20 11:06:00,0.322,0.3636
+ORD-1638,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,0,0,,,2026-10-11 17:44:00,0.1833,0.0714
+ORD-1639,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.25,0,0,,,2026-01-21 22:58:00,0.2,0.2
+ORD-1640,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.0,0,0,,,2026-02-15 13:35:00,0.3902,0.3333
+ORD-1641,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.0,0,0,,,2026-05-31 16:02:00,0.1538,0.1765
+ORD-1642,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.0,1,0,,,2026-03-05 09:46:00,0.2264,0.25
+ORD-1643,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.25,0,0,,,2026-04-16 16:47:00,0.7073,0.9
+ORD-1644,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,XL,Regular Fit,1,0.92,0.25,0,0,,,2026-09-06 19:42:00,0.125,0.0909
+ORD-1645,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,7,Athletic,1,0.87,0.0,0,0,,,2026-09-30 13:42:00,0.1538,0.1111
+ORD-1646,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,0,,,2026-06-30 21:23:00,0.2449,0.2667
+ORD-1647,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,12,Athletic,1,0.87,0.1,0,0,,,2026-10-21 11:24:00,0.1538,0.3333
+ORD-1648,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.15,0,0,,,2026-08-06 08:46:00,0.125,0.0667
+ORD-1649,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.25,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-06-17 11:13:00,0.1833,0.4167
+ORD-1650,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.1,0,0,,,2026-10-03 16:36:00,0.25,0.3636
+ORD-1651,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.1,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-05-14 12:51:00,0.2931,0.4167
+ORD-1652,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.25,0,0,,,2026-02-23 19:20:00,0.2222,0.1667
+ORD-1653,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.25,0,0,,,2026-03-04 17:41:00,0.3276,0.2
+ORD-1654,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.25,0,0,,,2026-02-12 22:49:00,0.2222,0.1667
+ORD-1655,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.15,0,0,,,2026-03-17 21:49:00,0.25,0.2
+ORD-1656,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.15,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-10-18 17:09:00,0.7073,0.7273
+ORD-1657,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.0,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-08-31 20:38:00,0.25,0.6
+ORD-1658,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.1,0,0,,,2026-03-31 10:21:00,0.322,0.3636
+ORD-1659,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.0,0,0,,,2026-05-29 09:25:00,0.2264,0.2308
+ORD-1660,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.0,0,0,,,2026-09-18 16:12:00,0.322,0.375
+ORD-1661,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,0,0,,,2026-10-10 11:15:00,0.3276,0.6429
+ORD-1662,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.1,0,0,,,2026-03-01 09:42:00,0.2264,0.25
+ORD-1663,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,10,Athletic,1,0.87,0.0,0,0,,,2026-01-27 20:19:00,0.1538,0.0
+ORD-1664,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.15,0,0,,,2026-08-28 08:59:00,0.2449,0.0
+ORD-1665,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,S,Regular Fit,0,0.6,0.0,0,0,,,2026-02-27 09:47:00,0.7073,0.6667
+ORD-1666,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.0,0,0,,,2026-06-11 08:21:00,0.1833,0.1429
+ORD-1667,P004,Mercerized Ribbed Polo,T-Shirts,54.0,L,Slim Fit,0,0.65,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-29 16:33:00,0.5833,0.7143
+ORD-1668,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-01-24 14:37:00,0.2,0.0769
+ORD-1669,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.0,0,0,,,2026-06-02 08:29:00,0.322,0.3636
+ORD-1670,P001,Heritage Oxford Slim Shirt,Shirts,68.0,S,Slim Fit,1,0.82,0.1,0,0,,,2026-07-18 21:06:00,0.25,0.0
+ORD-1671,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.15,0,1,Shoulder / Armhole Tightness,Tension across upper back when driving.,2026-03-06 22:20:00,0.25,0.2353
+ORD-1672,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.0,0,1,Style Did Not Suit Customer,"Looked great on model, cut just didn't flatter my proportions.",2026-02-04 11:59:00,0.3276,0.1818
+ORD-1673,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.15,0,0,,,2026-01-24 13:43:00,0.322,0.3333
+ORD-1674,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.0,0,0,,,2026-09-28 12:51:00,0.1364,0.2308
+ORD-1675,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.0,0,0,,,2026-06-07 11:09:00,0.1833,0.4167
+ORD-1676,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.0,0,0,,,2026-10-08 18:39:00,0.25,0.1429
+ORD-1677,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,L,Regular Fit,0,0.6,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-09-01 16:08:00,0.7073,0.9
+ORD-1678,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.0,0,0,,,2026-06-22 19:45:00,0.3902,0.1111
+ORD-1679,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,M,Relaxed Fit,1,0.89,0.0,0,0,,,2026-04-05 13:04:00,0.322,0.1667
+ORD-1680,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.0,0,0,,,2026-06-27 22:26:00,0.125,0.2727
+ORD-1681,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.1,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-19 08:48:00,0.1538,0.1765
+ORD-1682,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.0,0,0,,,2026-07-17 09:44:00,0.2,0.2667
+ORD-1683,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.25,0,0,,,2026-07-25 10:54:00,0.3276,0.2
+ORD-1684,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-06-02 14:14:00,0.322,0.5455
+ORD-1685,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.15,1,0,,,2026-09-22 19:20:00,0.3902,0.1111
+ORD-1686,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.0,0,0,,,2026-07-28 19:20:00,0.6585,0.375
+ORD-1687,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.25,0,0,,,2026-10-10 18:56:00,0.322,0.5
+ORD-1688,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,1,0,,,2026-02-05 22:15:00,0.1833,0.0714
+ORD-1689,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XXL,Relaxed Fit,1,0.89,0.0,0,0,,,2026-10-06 20:40:00,0.322,0.4
+ORD-1690,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.15,0,0,,,2026-06-10 15:10:00,0.1833,0.1429
+ORD-1691,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.0,0,0,,,2026-03-28 15:53:00,0.1538,0.1765
+ORD-1692,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-10-21 10:25:00,0.6585,0.8333
+ORD-1693,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.0,0,0,,,2026-04-28 22:29:00,0.1538,0.1765
+ORD-1694,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.0,0,0,,,2026-03-19 09:07:00,0.2264,0.25
+ORD-1695,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.15,1,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-04-06 14:35:00,0.6585,0.6364
+ORD-1696,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.1,0,0,,,2026-04-01 10:55:00,0.322,0.4444
+ORD-1697,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.0,0,0,,,2026-06-22 19:49:00,0.2931,0.25
+ORD-1698,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.0,0,0,,,2026-04-28 08:39:00,0.6585,0.6364
+ORD-1699,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.15,0,0,,,2026-01-17 17:56:00,0.2,0.2
+ORD-1700,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.15,0,0,,,2026-08-29 09:38:00,0.3276,0.2
+ORD-1701,P001,Heritage Oxford Slim Shirt,Shirts,68.0,M,Slim Fit,1,0.82,0.1,0,0,,,2026-05-01 08:11:00,0.25,0.0
+ORD-1702,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-07-03 22:05:00,0.2931,0.4167
+ORD-1703,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.0,0,0,,,2026-06-09 17:42:00,0.1833,0.2
+ORD-1704,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.25,0,0,,,2026-02-02 09:49:00,0.125,0.1053
+ORD-1705,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.15,0,0,,,2026-08-21 21:35:00,0.2222,0.5
+ORD-1706,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.0,0,0,,,2026-06-04 13:33:00,0.2264,0.25
+ORD-1707,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.0,0,0,,,2026-03-11 17:46:00,0.1538,0.0
+ORD-1708,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.25,0,0,,,2026-06-11 14:38:00,0.322,0.3636
+ORD-1709,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.25,0,0,,,2026-03-22 17:36:00,0.25,0.2
+ORD-1710,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.15,0,0,,,2026-04-17 22:39:00,0.3276,0.1818
+ORD-1711,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-05-01 20:39:00,0.7073,0.5714
+ORD-1712,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,10,Athletic,1,0.87,0.1,1,0,,,2026-05-03 08:40:00,0.1538,0.0
+ORD-1713,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-01-18 09:43:00,0.3902,0.4545
+ORD-1714,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.25,0,0,,,2026-01-29 21:11:00,0.25,0.2
+ORD-1715,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.15,0,0,,,2026-02-02 18:08:00,0.3902,0.4545
+ORD-1716,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.25,0,0,,,2026-09-08 20:52:00,0.3276,0.2
+ORD-1717,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,12,Athletic,1,0.87,0.25,1,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-10-16 08:13:00,0.1538,0.3333
+ORD-1718,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.0,1,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-10-15 21:10:00,0.25,0.2
+ORD-1719,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.1,0,0,,,2026-06-25 19:02:00,0.322,0.1429
+ORD-1720,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,1,1,Color Different From Photo,Expected crisp white but arrived slightly off-white cream.,2026-05-05 16:19:00,0.2,0.0769
+ORD-1721,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-03-03 15:32:00,0.2449,0.1538
+ORD-1722,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XL,Slim Fit,1,0.82,0.0,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-10-10 12:49:00,0.25,0.5
+ORD-1723,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.0,0,0,,,2026-10-06 18:08:00,0.25,0.0714
+ORD-1724,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.25,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-02-28 13:29:00,0.3902,0.5714
+ORD-1725,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.1,0,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-05-02 13:12:00,0.1833,0.2
+ORD-1726,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,M,Slim Fit,1,0.85,0.1,0,0,,,2026-03-16 12:09:00,0.3902,0.4545
+ORD-1727,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.25,1,0,,,2026-03-08 11:34:00,0.2449,0.0
+ORD-1728,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.1,0,0,,,2026-04-12 09:19:00,0.1364,0.2308
+ORD-1729,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.0,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-03-10 14:03:00,0.25,0.6
+ORD-1730,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.25,0,0,,,2026-08-31 17:22:00,0.2264,0.2308
+ORD-1731,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.25,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-03-23 09:52:00,0.2222,0.5
+ORD-1732,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.15,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-05-27 22:23:00,0.6585,0.8333
+ORD-1733,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,8,Regular Fit,1,0.94,0.1,0,0,,,2026-06-30 15:31:00,0.322,0.1429
+ORD-1734,P001,Heritage Oxford Slim Shirt,Shirts,68.0,S,Slim Fit,1,0.82,0.1,0,0,,,2026-04-12 12:49:00,0.25,0.0
+ORD-1735,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,M,Athletic,1,0.93,0.15,0,0,,,2026-03-10 13:35:00,0.1364,0.0
+ORD-1736,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.15,0,0,,,2026-05-17 17:15:00,0.2264,0.25
+ORD-1737,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.15,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-08-25 17:50:00,0.125,0.1053
+ORD-1738,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.0,0,0,,,2026-02-23 19:59:00,0.25,0.6
+ORD-1739,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.15,0,0,,,2026-03-05 21:28:00,0.3276,0.2308
+ORD-1740,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.0,0,0,,,2026-07-28 13:31:00,0.2449,0.0
+ORD-1741,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.0,0,0,,,2026-01-15 20:09:00,0.1833,0.2
+ORD-1742,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.15,0,0,,,2026-08-31 11:13:00,0.2931,0.2
+ORD-1743,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.1,0,0,,,2026-08-25 19:58:00,0.25,0.2
+ORD-1744,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.25,0,0,,,2026-08-09 21:08:00,0.1364,0.0769
+ORD-1745,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.25,0,0,,,2026-01-15 19:35:00,0.2222,0.1667
+ORD-1746,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,0,0,,,2026-08-04 18:20:00,0.1364,0.0769
+ORD-1747,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-21 16:24:00,0.322,0.5455
+ORD-1748,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-03-29 19:56:00,0.1364,0.1667
+ORD-1749,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-09-05 22:50:00,0.3276,0.6429
+ORD-1750,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.25,0,0,,,2026-09-02 14:22:00,0.1538,0.0
+ORD-1751,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,S,Regular Fit,0,0.6,0.0,0,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-09-28 12:26:00,0.7073,0.6667
+ORD-1752,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.0,1,0,,,2026-07-22 09:37:00,0.125,0.0667
+ORD-1753,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.25,0,0,,,2026-06-07 15:33:00,0.3276,0.2308
+ORD-1754,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.0,0,0,,,2026-02-23 18:40:00,0.2264,0.2
+ORD-1755,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.1,0,0,,,2026-01-20 15:29:00,0.125,0.0667
+ORD-1756,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.1,0,0,,,2026-06-14 12:10:00,0.322,0.375
+ORD-1757,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.25,0,0,,,2026-09-14 17:10:00,0.1833,0.0714
+ORD-1758,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.25,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-09-30 09:54:00,0.1833,0.4167
+ORD-1759,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.1,0,0,,,2026-05-26 08:47:00,0.2,0.25
+ORD-1760,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.0,0,0,,,2026-07-23 20:11:00,0.5833,0.5
+ORD-1761,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.25,0,0,,,2026-07-09 09:09:00,0.2,0.2667
+ORD-1762,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.15,0,0,,,2026-05-16 18:28:00,0.2931,0.2
+ORD-1763,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.1,0,1,Size Too Small,Way tighter than expected across the chest.,2026-02-10 10:29:00,0.2449,0.4286
+ORD-1764,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.25,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-09-14 12:09:00,0.322,0.5455
+ORD-1765,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.15,1,1,Size Too Small,Way tighter than expected across the chest.,2026-03-05 22:34:00,0.322,0.375
+ORD-1766,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.1,0,0,,,2026-05-31 20:06:00,0.1364,0.1667
+ORD-1767,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,XL,Regular Fit,1,0.94,0.0,0,0,,,2026-04-24 16:21:00,0.2,0.0769
+ORD-1768,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,34,Relaxed Fit,1,0.92,0.0,0,0,,,2026-01-21 14:06:00,0.2449,0.0
+ORD-1769,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.1,0,0,,,2026-06-09 12:12:00,0.322,0.3636
+ORD-1770,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.0,0,0,,,2026-05-06 17:40:00,0.1833,0.2
+ORD-1771,P004,Mercerized Ribbed Polo,T-Shirts,54.0,S,Slim Fit,0,0.65,0.25,1,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-03-12 19:11:00,0.5833,0.5833
+ORD-1772,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.0,0,0,,,2026-06-05 20:27:00,0.2,0.25
+ORD-1773,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.0,0,0,,,2026-02-15 14:24:00,0.25,0.2
+ORD-1774,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.1,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-08-04 10:41:00,0.25,0.3636
+ORD-1775,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.15,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-05-27 09:02:00,0.3276,0.2308
+ORD-1776,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.1,0,0,,,2026-01-24 22:31:00,0.2264,0.1667
+ORD-1777,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.0,0,0,,,2026-05-31 10:44:00,0.2931,0.5
+ORD-1778,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.25,0,0,,,2026-09-23 15:27:00,0.25,0.1429
+ORD-1779,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,12,Regular Fit,1,0.94,0.0,0,0,,,2026-01-16 14:44:00,0.322,0.1429
+ORD-1780,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.1,0,0,,,2026-06-19 14:03:00,0.3276,0.2308
+ORD-1781,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.1,0,1,Size Too Large,"Drapes way too loose, recommend sizing down.",2026-04-28 10:35:00,0.2264,0.25
+ORD-1782,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.1,0,0,,,2026-03-10 18:44:00,0.1833,0.1
+ORD-1783,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.15,1,0,,,2026-03-27 08:12:00,0.1364,0.1667
+ORD-1784,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.15,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-09-27 16:53:00,0.25,0.3333
+ORD-1785,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,1,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-03-16 11:51:00,0.6585,0.8333
+ORD-1786,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.25,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-02-02 19:09:00,0.322,0.375
+ORD-1787,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.25,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-01-22 10:40:00,0.3276,0.2308
+ORD-1788,P002,Classic Twill Dress Shirt,Shirts,74.0,L,Regular Fit,1,0.95,0.0,0,0,,,2026-04-12 21:37:00,0.1833,0.4167
+ORD-1789,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.25,1,0,,,2026-05-07 09:51:00,0.2264,0.1667
+ORD-1790,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.15,0,1,Fabric / Material Disappointment,Not the premium hand-feel I anticipated for the price.,2026-10-21 10:20:00,0.3902,0.3333
+ORD-1791,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.1,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-04-11 19:23:00,0.3902,0.5714
+ORD-1792,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.25,0,1,Size Too Small,"Waistband has zero give, couldn't zip comfortably.",2026-04-05 08:56:00,0.125,0.1053
+ORD-1793,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.0,1,0,,,2026-06-09 14:44:00,0.3276,0.2308
+ORD-1794,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,S,Relaxed Fit,1,0.86,0.1,0,0,,,2026-08-13 11:11:00,0.3276,0.2
+ORD-1795,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,0,0,,,2026-03-01 18:52:00,0.1833,0.0714
+ORD-1796,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.25,0,1,Size Too Small,Way tighter than expected across the chest.,2026-07-19 21:48:00,0.2222,0.5
+ORD-1797,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.0,0,0,,,2026-04-24 09:50:00,0.125,0.1053
+ORD-1798,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,36,Slim Fit,1,0.88,0.15,0,0,,,2026-04-06 18:59:00,0.2931,0.5
+ORD-1799,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.1,0,0,,,2026-05-23 13:39:00,0.1833,0.2
+ORD-1800,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,1,0,,,2026-04-15 10:50:00,0.6585,0.8333
+ORD-1801,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XL,Slim Fit,1,0.82,0.0,0,0,,,2026-08-30 17:37:00,0.25,0.5
+ORD-1802,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.1,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-03-06 11:47:00,0.25,0.1429
+ORD-1803,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,8,Athletic,1,0.87,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-08-26 10:13:00,0.1538,0.4
+ORD-1804,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-06-02 11:21:00,0.6585,0.375
+ORD-1805,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,30,Slim Fit,1,0.88,0.0,0,0,,,2026-03-12 21:29:00,0.2931,0.4167
+ORD-1806,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.1,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-12 17:35:00,0.6585,0.7
+ORD-1807,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.25,0,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-09-14 21:29:00,0.7073,0.7273
+ORD-1808,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.0,0,0,,,2026-08-25 17:14:00,0.2,0.2
+ORD-1809,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,34,Slim Fit,1,0.88,0.15,0,0,,,2026-02-04 15:46:00,0.2931,0.0
+ORD-1810,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,S,Relaxed Fit,1,0.89,0.15,0,0,,,2026-03-06 15:31:00,0.322,0.3636
+ORD-1811,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.0,0,0,,,2026-08-11 11:08:00,0.7073,0.7273
+ORD-1812,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.0,0,1,Fabric / Material Disappointment,Fabric is much thinner than it appeared in photos.,2026-09-07 21:36:00,0.1364,0.2308
+ORD-1813,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XL,Slim Fit,1,0.82,0.0,0,0,,,2026-08-10 10:50:00,0.25,0.5
+ORD-1814,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.0,0,0,,,2026-02-20 14:57:00,0.1364,0.1667
+ORD-1815,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XL,Slim Fit,1,0.89,0.15,1,0,,,2026-10-19 17:50:00,0.25,0.6
+ORD-1816,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XS,Slim Fit,1,0.85,0.1,0,0,,,2026-02-12 16:58:00,0.3902,0.5714
+ORD-1817,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.1,1,0,,,2026-02-04 13:23:00,0.1364,0.0769
+ORD-1818,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-09-16 19:48:00,0.2449,0.1538
+ORD-1819,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.1,0,0,,,2026-08-19 12:03:00,0.3902,0.1111
+ORD-1820,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,M,Oversized,1,0.9,0.15,0,0,,,2026-03-18 15:45:00,0.2264,0.25
+ORD-1821,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.1,0,0,,,2026-02-17 11:57:00,0.125,0.0667
+ORD-1822,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,S,Relaxed Fit,0,0.58,0.0,1,1,Color Different From Photo,Color is more muted than the vibrant online images.,2026-04-09 12:07:00,0.6585,0.8333
+ORD-1823,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.0,0,0,,,2026-01-26 12:26:00,0.2931,0.2
+ORD-1824,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.15,0,0,,,2026-01-25 12:12:00,0.125,0.1053
+ORD-1825,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.0,0,0,,,2026-10-08 18:21:00,0.2264,0.1667
+ORD-1826,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.1,0,0,,,2026-10-13 21:35:00,0.1538,0.0
+ORD-1827,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.0,0,0,,,2026-06-20 10:50:00,0.6585,0.7
+ORD-1828,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.1,0,0,,,2026-02-08 10:22:00,0.2,0.2667
+ORD-1829,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.25,0,0,,,2026-10-16 12:11:00,0.2222,0.0
+ORD-1830,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-08-28 12:23:00,0.2449,0.4286
+ORD-1831,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,32,Relaxed Fit,1,0.92,0.0,0,0,,,2026-07-10 10:23:00,0.2449,0.4286
+ORD-1832,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.0,0,0,,,2026-08-10 22:31:00,0.6585,0.375
+ORD-1833,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,33,Slim Fit,1,0.88,0.0,0,1,Size Too Large,Length and waist were much wider than standard.,2026-07-03 18:45:00,0.2931,0.2
+ORD-1834,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.25,0,0,,,2026-08-29 13:44:00,0.2222,0.0
+ORD-1835,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.0,0,0,,,2026-03-15 12:01:00,0.5833,0.5556
+ORD-1836,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,11,Regular Fit,1,0.94,0.15,0,0,,,2026-07-01 08:38:00,0.322,0.5
+ORD-1837,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XL,Slim Fit,1,0.85,0.1,0,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-02-28 16:25:00,0.3902,0.6
+ORD-1838,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,L,Slim Fit,1,0.85,0.25,0,0,,,2026-02-12 22:42:00,0.3902,0.3333
+ORD-1839,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.15,0,0,,,2026-07-24 08:18:00,0.1364,0.1667
+ORD-1840,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,L,Athletic,1,0.93,0.15,0,0,,,2026-02-28 11:46:00,0.1364,0.2308
+ORD-1841,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.1,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-08-15 10:53:00,0.6585,0.7
+ORD-1842,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,S,Oversized,1,0.9,0.15,0,0,,,2026-10-10 13:04:00,0.2264,0.3333
+ORD-1843,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,7,Regular Fit,1,0.94,0.1,1,1,Size Too Large,Length and waist were much wider than standard.,2026-03-26 11:11:00,0.322,0.4444
+ORD-1844,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,0,,,2026-06-18 21:37:00,0.322,0.1765
+ORD-1845,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.15,0,0,,,2026-01-16 10:16:00,0.2222,0.0
+ORD-1846,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.1,0,0,,,2026-09-23 22:44:00,0.2222,0.0
+ORD-1847,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,XS,Regular Fit,0,0.6,0.1,1,1,Color Different From Photo,Shade has an unexpected olive undertone.,2026-07-19 17:30:00,0.7073,0.7273
+ORD-1848,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,0,0,,,2026-03-17 13:32:00,0.1538,0.1765
+ORD-1849,P001,Heritage Oxford Slim Shirt,Shirts,68.0,L,Slim Fit,1,0.82,0.0,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-07-16 10:03:00,0.25,0.2353
+ORD-1850,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.1,0,1,Size Too Small,Way tighter than expected across the chest.,2026-10-05 11:49:00,0.2,0.25
+ORD-1851,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-06-25 21:54:00,0.2449,0.1538
+ORD-1852,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.1,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-01-21 10:33:00,0.2222,0.5
+ORD-1853,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,L,Athletic,1,0.91,0.15,0,0,,,2026-04-08 09:13:00,0.2222,0.5
+ORD-1854,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,34,Slim Fit,1,0.88,0.0,0,0,,,2026-10-11 21:34:00,0.2931,0.0
+ORD-1855,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.0,0,1,Size Too Small,Way tighter than expected across the chest.,2026-09-17 13:19:00,0.125,0.2727
+ORD-1856,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,M,Athletic,1,0.93,0.25,0,0,,,2026-07-09 10:45:00,0.1364,0.0
+ORD-1857,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.0,0,0,,,2026-03-28 19:14:00,0.2222,0.1667
+ORD-1858,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.0,0,0,,,2026-03-13 09:01:00,0.2222,0.2727
+ORD-1859,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,1,1,Size Too Large,Length and waist were much wider than standard.,2026-02-14 15:07:00,0.3276,0.6429
+ORD-1860,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,S,Regular Fit,1,0.94,0.0,1,0,,,2026-03-19 22:38:00,0.2,0.2
+ORD-1861,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,XL,Slim Fit,1,0.85,0.0,0,0,,,2026-01-29 09:09:00,0.3902,0.6
+ORD-1862,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.25,0,0,,,2026-05-18 16:36:00,0.2,0.25
+ORD-1863,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XS,Oversized,1,0.9,0.0,0,0,,,2026-04-23 12:10:00,0.2264,0.1667
+ORD-1864,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,S,Regular Fit,1,0.92,0.0,0,0,,,2026-09-30 21:45:00,0.125,0.2727
+ORD-1865,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,M,Relaxed Fit,1,0.86,0.0,0,0,,,2026-03-10 10:53:00,0.3276,0.3
+ORD-1866,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.25,0,0,,,2026-03-13 20:20:00,0.1364,0.1667
+ORD-1867,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.0,1,1,Shoulder / Armhole Tightness,"Shoulder seams are very narrow, severely restricted mobility.",2026-02-04 09:20:00,0.5833,0.5556
+ORD-1868,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XS,Relaxed Fit,1,0.86,0.15,0,0,,,2026-06-23 18:53:00,0.3276,0.2308
+ORD-1869,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,M,Relaxed Fit,0,0.58,0.1,0,0,,,2026-08-22 11:54:00,0.6585,0.375
+ORD-1870,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,L,Oversized,1,0.9,0.1,0,0,,,2026-09-23 18:06:00,0.2264,0.2308
+ORD-1871,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.0,0,1,Size Too Large,Length and waist were much wider than standard.,2026-03-08 19:59:00,0.322,0.5455
+ORD-1872,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,30,Relaxed Fit,1,0.92,0.0,0,0,,,2026-08-09 09:14:00,0.2449,0.1538
+ORD-1873,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,12,Athletic,1,0.87,0.25,0,0,,,2026-08-07 13:30:00,0.1538,0.3333
+ORD-1874,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,10,Regular Fit,1,0.94,0.0,0,0,,,2026-03-11 09:16:00,0.322,0.5455
+ORD-1875,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,L,Relaxed Fit,1,0.86,0.0,0,1,Size Too Large,"Swallowed me whole, very baggy.",2026-09-27 18:01:00,0.3276,0.6429
+ORD-1876,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,0,,,2026-03-05 20:04:00,0.2449,0.2667
+ORD-1877,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,XL,Relaxed Fit,1,0.89,0.0,0,0,,,2026-09-26 15:32:00,0.322,0.375
+ORD-1878,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,L,Regular Fit,1,0.94,0.25,0,0,,,2026-01-31 14:56:00,0.2,0.25
+ORD-1879,P004,Mercerized Ribbed Polo,T-Shirts,54.0,XL,Slim Fit,0,0.65,0.15,0,1,Shoulder / Armhole Tightness,Fits okay on waist but cuts into armpits whenever I raise my arms.,2026-06-19 22:45:00,0.5833,0.5556
+ORD-1880,P006,Pleated Relaxed Cotton Chinos,Pants,82.0,36,Relaxed Fit,1,0.92,0.1,0,0,,,2026-09-21 20:07:00,0.2449,0.2667
+ORD-1881,P016,High-Rise Wide Leg Linen Trousers,Pants,89.0,XL,Relaxed Fit,1,0.86,0.25,0,0,,,2026-04-05 16:03:00,0.3276,0.1818
+ORD-1882,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.15,0,0,,,2026-07-14 20:18:00,0.322,0.1765
+ORD-1883,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,XS,Slim Fit,1,0.89,0.0,1,1,Size Too Small,Way tighter than expected across the chest.,2026-07-08 14:06:00,0.25,0.3636
+ORD-1884,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,0,0,,,2026-05-20 11:15:00,0.1538,0.1765
+ORD-1885,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XXL,Athletic,1,0.91,0.0,1,0,,,2026-03-14 13:10:00,0.2222,0.125
+ORD-1886,P001,Heritage Oxford Slim Shirt,Shirts,68.0,XXL,Slim Fit,1,0.82,0.15,0,0,,,2026-08-19 17:32:00,0.25,0.3333
+ORD-1887,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,1,0,,,2026-06-26 14:36:00,0.1538,0.1765
+ORD-1888,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.15,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-09-26 16:51:00,0.322,0.1765
+ORD-1889,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,S,Slim Fit,1,0.89,0.1,0,0,,,2026-04-28 15:40:00,0.25,0.0714
+ORD-1890,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.1,0,1,Style Did Not Suit Customer,Silhouette didn't work for my height.,2026-05-10 17:47:00,0.2264,0.2
+ORD-1891,P003,Supima Heavyweight Boxy Tee,T-Shirts,38.0,XL,Oversized,1,0.9,0.1,1,1,Size Too Large,Length and waist were much wider than standard.,2026-09-15 14:13:00,0.2264,0.2
+ORD-1892,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.1,0,0,,,2026-06-17 14:42:00,0.1364,0.0769
+ORD-1893,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,L,Regular Fit,1,0.92,0.15,0,0,,,2026-10-05 15:42:00,0.125,0.0667
+ORD-1894,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.25,0,0,,,2026-09-27 11:42:00,0.125,0.1053
+ORD-1895,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,L,Relaxed Fit,0,0.58,0.25,0,0,,,2026-08-25 22:36:00,0.6585,0.6364
+ORD-1896,P002,Classic Twill Dress Shirt,Shirts,74.0,XXL,Regular Fit,1,0.95,0.15,0,0,,,2026-04-02 19:43:00,0.1833,0.0714
+ORD-1897,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.0,0,0,,,2026-08-14 12:52:00,0.2222,0.0
+ORD-1898,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,M,Athletic,1,0.91,0.25,0,1,Size Too Small,"Could barely button it up, definitely needed a size bigger.",2026-04-23 08:15:00,0.2222,0.2727
+ORD-1899,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,XL,Athletic,1,0.91,0.15,0,0,,,2026-02-02 11:10:00,0.2222,0.0
+ORD-1900,P009,Merino Wool Cashmere Overcoat,Outerwear,280.0,M,Regular Fit,1,0.94,0.1,1,0,,,2026-04-15 18:54:00,0.2,0.2667
+ORD-1901,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.0,0,0,,,2026-02-26 13:38:00,0.1833,0.1
+ORD-1902,P010,Ultralight Packable Waterproof Parka,Outerwear,135.0,S,Athletic,1,0.91,0.15,0,0,,,2026-03-02 14:53:00,0.2222,0.1667
+ORD-1903,P005,Selvedge Slim-Taper Denim Jeans,Jeans,125.0,31,Slim Fit,1,0.88,0.25,1,0,,,2026-10-09 18:53:00,0.2931,0.25
+ORD-1904,P017,Camp Collar Linen Floral Resort Shirt,Shirts,58.0,L,Relaxed Fit,1,0.89,0.0,0,0,,,2026-03-18 20:51:00,0.322,0.3333
+ORD-1905,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,M,Slim Fit,1,0.89,0.15,0,0,,,2026-05-15 22:27:00,0.25,0.2
+ORD-1906,P007,Tailored Double-Breasted Blazer Dress,Dresses,145.0,S,Slim Fit,1,0.85,0.0,1,0,,,2026-08-28 14:16:00,0.3902,0.1111
+ORD-1907,P002,Classic Twill Dress Shirt,Shirts,74.0,XL,Regular Fit,1,0.95,0.0,0,0,,,2026-08-19 15:43:00,0.1833,0.1
+ORD-1908,P008,Silk Satin Bias Cut Midi Dress,Dresses,160.0,M,Regular Fit,0,0.6,0.0,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-01-25 18:57:00,0.7073,0.5714
+ORD-1909,P002,Classic Twill Dress Shirt,Shirts,74.0,S,Regular Fit,1,0.95,0.0,0,0,,,2026-07-30 12:40:00,0.1833,0.2
+ORD-1910,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,S,Athletic,1,0.93,0.0,0,0,,,2026-08-01 08:58:00,0.1364,0.0769
+ORD-1911,P013,Italian Calfskin Goodyear Welted Derby,Footwear,210.0,9,Regular Fit,1,0.94,0.0,0,0,,,2026-04-07 22:28:00,0.322,0.1765
+ORD-1912,P011,High-Waist Sculpt Compression Leggings,Activewear,64.0,L,Slim Fit,1,0.89,0.1,0,0,,,2026-09-23 15:47:00,0.25,0.1429
+ORD-1913,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.0,0,0,,,2026-05-28 16:04:00,0.1538,0.1765
+ORD-1914,P012,Seamless Aero-Vent Tech Tee,Activewear,42.0,XL,Athletic,1,0.93,0.25,0,0,,,2026-09-04 19:01:00,0.1364,0.1667
+ORD-1915,P002,Classic Twill Dress Shirt,Shirts,74.0,M,Regular Fit,1,0.95,0.0,0,1,Size Too Small,Runs much smaller than standard sizing charts.,2026-06-24 17:05:00,0.1833,0.1429
+ORD-1916,P004,Mercerized Ribbed Polo,T-Shirts,54.0,M,Slim Fit,0,0.65,0.0,0,0,,,2026-08-13 20:20:00,0.5833,0.5
+ORD-1917,P015,Chunky Cable-Knit Wool Cardigan,Outerwear,110.0,XL,Relaxed Fit,0,0.58,0.0,0,1,Fabric / Material Disappointment,Material felt scratchy and stiff against skin.,2026-06-08 11:05:00,0.6585,0.7
+ORD-1918,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,9,Athletic,1,0.87,0.15,0,0,,,2026-05-09 08:01:00,0.1538,0.1765
+ORD-1919,P018,Brushed Flannel Overshirt Shacket,Outerwear,79.0,M,Regular Fit,1,0.92,0.15,0,0,,,2026-04-11 08:25:00,0.125,0.1053
+ORD-1920,P014,Featherlight Knit Runner Sneaker,Footwear,115.0,11,Athletic,1,0.87,0.0,0,0,,,2026-04-12 17:07:00,0.1538,0.0
