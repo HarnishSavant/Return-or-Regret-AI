@@ -15,7 +15,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.82,
-    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P001.jpg",
     "description": "Tailored slim-fit button-down Oxford shirt crafted from heavyweight pinpoint cotton. Structured collar and taper at waist. Cut slightly narrow across the shoulders for a modern profile.",
     "care_instructions": "Machine wash cold inside-out, tumble dry low, warm iron.",
     "known_fit_quirks": "Runs snug across the upper back and shoulders. Customers with athletic builds often need one size up.",
@@ -58,7 +58,8 @@
     },
     "historical_return_rate": 0.25,
     "total_orders": 40,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P002",
@@ -76,7 +77,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.95,
-    "image_url": "https://images.unsplash.com/photo-1620012253295-c15c429f6f60?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P002.jpg",
     "description": "A refined regular-fit dress shirt featuring a spread collar, French placket, and two-ply 80s yarn twill fabric. True to standard business tailoring measurements.",
     "care_instructions": "Machine wash warm, hang dry, medium steam iron.",
     "known_fit_quirks": "True to size. Generous waist allowance suitable for all-day comfort.",
@@ -119,7 +120,8 @@
     },
     "historical_return_rate": 0.1833,
     "total_orders": 60,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P003",
@@ -137,7 +139,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.9,
-    "image_url": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P003.jpg",
     "description": "Dropped shoulder, relaxed silhouette, and dense rib collar. Designed for an intentional boxy streetwear drape.",
     "care_instructions": "Wash cold, flat air dry to prevent length shrinkage.",
     "known_fit_quirks": "Already cut 2-3 inches wider in chest. Order regular size for boxy fit, downsize for standard look.",
@@ -180,7 +182,8 @@
     },
     "historical_return_rate": 0.2264,
     "total_orders": 53,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P004",
@@ -197,7 +200,7 @@
     ],
     "size_guide_available": false,
     "description_completeness": 0.65,
-    "image_url": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P004.jpg",
     "description": "Smart casual knit polo with ribbed cuffs and subtle luster. Unstructured collar.",
     "care_instructions": "Gentle wash cold, lay flat to dry.",
     "known_fit_quirks": "High return rate due to missing chest chart and tighter than expected arm openings.",
@@ -233,7 +236,8 @@
     },
     "historical_return_rate": 0.5833,
     "total_orders": 36,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P005",
@@ -252,7 +256,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.88,
-    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P005.jpg",
     "description": "Japanese raw selvedge denim with slight 2% comfort stretch. Mid-rise with clean taper from knee to leg opening.",
     "care_instructions": "Wash cold inside-out, soak only, avoid dryer to prevent inseam shrinkage.",
     "known_fit_quirks": "Rigid initial feel. Raw denim waist expands by ~0.75 inch after 5 wears. Inseam standard 32 inches.",
@@ -308,7 +312,8 @@
     },
     "historical_return_rate": 0.2931,
     "total_orders": 58,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P006",
@@ -325,7 +330,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.92,
-    "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P006.jpg",
     "description": "Double pleated front with roomy thigh cut and gentle taper towards the ankle. Elasticated side waist inserts.",
     "care_instructions": "Machine wash warm with like colors, tumble dry low.",
     "known_fit_quirks": "Waist runs true to size with elastic forgiveness; generous seat and thighs.",
@@ -365,7 +370,8 @@
     },
     "historical_return_rate": 0.2449,
     "total_orders": 49,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P007",
@@ -383,7 +389,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.85,
-    "image_url": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P007.jpg",
     "description": "Structured hourglass blazer dress with padded shoulders, satin peak lapels, and horn buttons. Fully lined interior.",
     "care_instructions": "Dry clean only.",
     "known_fit_quirks": "Zero stretch through ribcage and waist seams. Measure fullest bust and underbust accurately.",
@@ -426,7 +432,8 @@
     },
     "historical_return_rate": 0.3902,
     "total_orders": 41,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P008",
@@ -443,7 +450,7 @@
     ],
     "size_guide_available": false,
     "description_completeness": 0.6,
-    "image_url": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P008.jpg",
     "description": "Sensual cowl neck slip dress cut on the bias to hug body contours naturally. Adjustable criss-cross spaghetti straps.",
     "care_instructions": "Hand wash cold with silk detergent or dry clean.",
     "known_fit_quirks": "High return frequency: bias cut clings unexpectedly across hips and lower abdomen.",
@@ -475,7 +482,8 @@
     },
     "historical_return_rate": 0.7073,
     "total_orders": 41,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P009",
@@ -492,7 +500,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.94,
-    "image_url": "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P009.jpg",
     "description": "Full-length single-breasted topcoat with notch lapels, horn buttons, and Bemberg cupro lining. Cut with layering room.",
     "care_instructions": "Specialist dry clean only.",
     "known_fit_quirks": "Pattern already accounts for wearing a thick knitwear or blazer underneath.",
@@ -524,7 +532,8 @@
     },
     "historical_return_rate": 0.2,
     "total_orders": 55,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P010",
@@ -542,7 +551,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.91,
-    "image_url": "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P010.jpg",
     "description": "Seam-sealed storm jacket with 20,000mm hydrostatic head rating. Pit zips and 2-way adjustable storm hood.",
     "care_instructions": "Machine wash 30C with technical wash, tumble dry gentle to reactivate DWR.",
     "known_fit_quirks": "Athletic trim fit. If planning heavy fleece midlayers, choose one size up.",
@@ -580,7 +589,8 @@
     },
     "historical_return_rate": 0.2222,
     "total_orders": 54,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P011",
@@ -598,7 +608,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.89,
-    "image_url": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P011.jpg",
     "description": "High-compression squat-proof leggings with bonded 4-inch waistband and ergonomic side drop-in pockets.",
     "care_instructions": "Wash cold, hang dry, do not use fabric softener.",
     "known_fit_quirks": "Substantial compression feel. Between sizes customers should size up for daily yoga/pilates.",
@@ -631,7 +641,8 @@
     },
     "historical_return_rate": 0.25,
     "total_orders": 64,
-    "risk_category": "Medium Risk"
+    "risk_category": "Medium Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P012",
@@ -648,7 +659,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.93,
-    "image_url": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P012.jpg",
     "description": "Engineered body-mapped knit zones for heat dissipation. Anti-odor silver-ion finish.",
     "care_instructions": "Machine wash cold gentle cycle.",
     "known_fit_quirks": "Athletic taper around chest and lats. Accurate to size chart.",
@@ -676,7 +687,8 @@
     },
     "historical_return_rate": 0.1364,
     "total_orders": 44,
-    "risk_category": "Low Risk"
+    "risk_category": "Low Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P013",
@@ -695,7 +707,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.94,
-    "image_url": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P013.jpg",
     "description": "Hand-stitched Goodyear welted derby shoes on an almond-toe classic last. Cork footbed that molds over time.",
     "care_instructions": "Cedar shoe trees required, conditioned with beeswax polish.",
     "known_fit_quirks": "Traditional dress shoe sizing. Runs 0.5 size larger than typical athletic sneakers.",
@@ -739,7 +751,8 @@
     },
     "historical_return_rate": 0.322,
     "total_orders": 59,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P014",
@@ -758,7 +771,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.87,
-    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P014.jpg",
     "description": "Seamless sock-like slip-on upper with supportive TPU heel counter and responsive rebound foam.",
     "care_instructions": "Hand clean with damp cloth, remove insole before washing.",
     "known_fit_quirks": "Sock fit holds firmly. Customers with wide feet should order 0.5 size larger.",
@@ -802,7 +815,8 @@
     },
     "historical_return_rate": 0.1538,
     "total_orders": 52,
-    "risk_category": "Low Risk"
+    "risk_category": "Low Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P015",
@@ -819,7 +833,7 @@
     ],
     "size_guide_available": false,
     "description_completeness": 0.58,
-    "image_url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P015.jpg",
     "description": "Heritage cable knit with horn toggle buttons and patch pockets.",
     "care_instructions": "Hand wash cold, dry flat.",
     "known_fit_quirks": "Heavy knit stretches after hanging; missing detailed sleeve/chest dimensions leads to returns.",
@@ -851,7 +865,8 @@
     },
     "historical_return_rate": 0.6585,
     "total_orders": 41,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P016",
@@ -869,7 +884,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.86,
-    "image_url": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P016.jpg",
     "description": "Breezy summery linen pant with pressed front crease, slash pockets, and removable matching belt.",
     "care_instructions": "Machine wash cold gentle, line dry, iron damp.",
     "known_fit_quirks": "Non-stretch linen; waist measurement must be exact. Inseam is long (designed to be worn with heels or hemmed).",
@@ -907,7 +922,8 @@
     },
     "historical_return_rate": 0.3276,
     "total_orders": 58,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P017",
@@ -925,7 +941,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.89,
-    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P017.jpg",
     "description": "Vacation ready Cuban collar short-sleeve shirt in subtle botanical print. Straight hem with side slits.",
     "care_instructions": "Cold wash, hang dry in shade.",
     "known_fit_quirks": "Relaxed straight body. Chest fits comfortably true to size.",
@@ -958,7 +974,8 @@
     },
     "historical_return_rate": 0.322,
     "total_orders": 59,
-    "risk_category": "High Risk"
+    "risk_category": "High Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80"
   },
   {
     "product_id": "P018",
@@ -975,7 +992,7 @@
     ],
     "size_guide_available": true,
     "description_completeness": 0.92,
-    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80",
+    "image_url": "/images/products/P018.jpg",
     "description": "Mid-weight layer hybrid between shirt and jacket. Dual flap chest pockets, durable melamine buttons.",
     "care_instructions": "Machine wash cold with like colors, tumble dry low.",
     "known_fit_quirks": "Standard overshirt sizing with enough ease to fit over a t-shirt or light sweater.",
@@ -1007,6 +1024,7 @@
     },
     "historical_return_rate": 0.125,
     "total_orders": 56,
-    "risk_category": "Low Risk"
+    "risk_category": "Low Risk",
+    "external_image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80"
   }
 ]

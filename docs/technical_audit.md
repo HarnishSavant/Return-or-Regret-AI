@@ -42,18 +42,30 @@
 - **Previous Defect:** Customer chat displayed raw JSON outputs, code snippets, and Python function names in an accordion.
 - **Resolution:** Completely stripped raw Python execution panels from customer view. Replaced with a **Structured Customer Recommendation Card** featuring a prominent verdict badge (`Good Fit`, `Fit Concern`, `High Fit Concern`, `Insufficient Information`), measurement ease comparison table, ML cohort risk card, historical defect notes, and an expandable non-technical explanation.
 
+### E. Intent Standardization & Dimensions Keyword Miss (RESOLVED — Phase 1.2)
+- **Previous Defect:** Non-standard intent names (`PRODUCT_SPECS_AND_CARE`, `SIZE_CHART_INQUIRY`, etc.) were used inconsistently. Inline classification in `controller.py` missed queries like *"What are the dimensions of size M for P001?"* due to missing "dimensions" root keyword, causing fallback to general consultation and firing 5 unnecessary tools.
+- **Resolution:**
+  - Created dedicated `backend/agent/intent_classifier.py` implementing score-based ranking and priority disambiguation.
+  - Standardized exactly **9 canonical intents** (`PRODUCT_INFORMATION`, `SIZE_INFORMATION`, `FIT_RECOMMENDATION`, `RETURN_RISK_PREDICTION`, `RETURN_HISTORY_ANALYSIS`, `RETURN_POLICY`, `PURCHASE_DECISION`, `GENERAL_PRODUCT_QUESTION`, `UNKNOWN_INTENT`).
+  - Added `ExtractedEntities` and `IntentClassificationResult` schemas with unit and measurement range validation.
+  - Fixed dimensions keyword patterns: *"What are the dimensions of size M for P001?"* correctly classifies as `SIZE_INFORMATION` and selects **only** `product_information_tool` and `size_chart_tool`.
+  - Added regression test suites: `test_scenarios.py` (20/20 passed) and `test_phase1_agent.py` (32/32 passed, 100%).
+
 ---
 
 ## 4. Modified & Created Files Summary
 
 | File Path | Action | Description |
 | :--- | :--- | :--- |
-| `backend/schemas/agent_schemas.py` | **Created** | Pydantic response models (`AgentResponse`, `FitAssessment`, `DecisionSynthesis`, etc.). |
+| `backend/schemas/agent_schemas.py` | **Enhanced** | Canonical `AgentIntent` enum (9 intents), `ExtractedEntities`, `IntentClassificationResult`, and response models. |
+| `backend/agent/intent_classifier.py` | **Created** | Dedicated, testable intent classification and entity extraction module. |
 | `backend/agent/decision_engine.py` | **Created** | Evidence reconciliation engine balancing physical ease, ML risk, and defect records. |
 | `backend/tools/agent_tools.py` | **Enhanced** | Fit-type tolerances, metric unit conversion, verified alternative size inspection. |
-| `backend/agent/controller.py` | **Enhanced** | Dynamic intent router, entity extractor regex fixes, structured response serialization. |
-| `backend/evaluation/test_scenarios.py` | **Created** | 20 automated test scenarios with automated pass/fail verification (100% pass rate). |
+| `backend/agent/controller.py` | **Enhanced** | Integrates `IntentClassifier`, enforces strict dynamic tool selection, logs telemetry. |
+| `backend/evaluation/test_scenarios.py` | **Enhanced** | 20 automated regression scenarios updated with canonical intents (20/20 passed, 100%). |
+| `backend/evaluation/test_phase1_agent.py` | **Created** | 32 comprehensive intent & entity extraction test cases (32/32 passed, 100%). |
+| `frontend/public/images/products/*.jpg` | **Created** | All 18 product images downloaded locally to prevent CDN 404/network blocks. |
 | `frontend/src/types/index.ts` | **Enhanced** | Matching TypeScript interfaces for structured responses. |
-| `frontend/src/services/api.ts` | **Enhanced** | Typed API contracts for structured responses. |
 | `frontend/src/components/RecommendationCard.tsx` | **Created** | Customer-facing recommendation UI (verdict badge, ease table, ML card, explanation). |
 | `frontend/src/pages/AssistantPage.tsx` | **Enhanced** | Clean chat stream with structured widgets; raw Python logs removed. |
+

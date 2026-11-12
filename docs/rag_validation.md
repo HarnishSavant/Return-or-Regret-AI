@@ -25,3 +25,4 @@ Every grounded answer produced by `rag_retrieval_tool` returns:
 
 ### Unsupported Query Handling:
 When a query asks about unindexed topics (e.g. "Do you sell Rolex watches?" or "What is the capital of France?"), the intent classifier catches it as `UNSUPPORTED_OR_IRRELEVANT` without making false vector matches or fabricating citations.
+

@@ -18,7 +18,7 @@ TEST_SCENARIOS = [
         "name": "Product Material Question",
         "query": "What material is P001 made of?",
         "context_pid": "P001",
-        "expected_intent": "PRODUCT_SPECS_AND_CARE",
+        "expected_intent": "PRODUCT_INFORMATION",
         "expected_tools": ["product_information_tool"],
         "expected_criterion": lambda res: "Cotton" in str(res.get("final_recommendation", "")) or "Cotton" in str(res.get("summary_message", ""))
     },
@@ -27,7 +27,7 @@ TEST_SCENARIOS = [
         "name": "Product Price Question",
         "query": "How much does P002 cost?",
         "context_pid": "P002",
-        "expected_intent": "PRODUCT_SPECS_AND_CARE",
+        "expected_intent": "PRODUCT_INFORMATION",
         "expected_tools": ["product_information_tool"],
         "expected_criterion": lambda res: "74" in str(res.get("summary_message", "")) or "74" in str(res.get("final_recommendation", ""))
     },
@@ -36,7 +36,7 @@ TEST_SCENARIOS = [
         "name": "Size Chart Question",
         "query": "Show me the size chart for P003.",
         "context_pid": "P003",
-        "expected_intent": "SIZE_CHART_INQUIRY",
+        "expected_intent": "SIZE_INFORMATION",
         "expected_tools": ["product_information_tool", "size_chart_tool"],
         "expected_criterion": lambda res: "size chart" in str(res.get("summary_message", "")).lower()
     },
@@ -81,7 +81,7 @@ TEST_SCENARIOS = [
         "name": "Historical Return Analysis",
         "query": "Why do customers return P004?",
         "context_pid": "P004",
-        "expected_intent": "RETURN_HISTORY_INQUIRY",
+        "expected_intent": "RETURN_HISTORY_ANALYSIS",
         "expected_tools": ["product_information_tool", "return_history_analyzer_tool"],
         "expected_criterion": lambda res: res.get("historical_analysis") is not None and res.get("historical_analysis", {}).get("total_orders_analyzed", 0) > 0
     },
@@ -90,7 +90,7 @@ TEST_SCENARIOS = [
         "name": "ML Return Prediction",
         "query": "What is the predicted probability of return for P005?",
         "context_pid": "P005",
-        "expected_intent": "RETURN_RISK_INQUIRY",
+        "expected_intent": "RETURN_RISK_PREDICTION",
         "expected_tools": ["return_risk_prediction_tool"],
         "expected_criterion": lambda res: res.get("ml_prediction") is not None and res.get("ml_prediction", {}).get("predicted_return_percentage", 0) > 0
     },
@@ -99,16 +99,16 @@ TEST_SCENARIOS = [
         "name": "Complex Shopping Decision",
         "query": "Should I purchase P001 in size M with chest 40 inches?",
         "context_pid": "P001",
-        "expected_intent": "COMPLEX_PURCHASE_DECISION",
+        "expected_intent": "PURCHASE_DECISION",
         "expected_tools": ["fit_calculator_tool", "return_risk_prediction_tool", "return_history_analyzer_tool"],
         "expected_criterion": lambda res: res.get("decision_synthesis") is not None
     },
     {
         "id": "TC-11",
         "name": "Conflicting ML & Fit Results Reconciliation",
-        "query": "My chest is 40 inches. Will P001 Size M fit?",
+        "query": "Should I purchase P001 in size M? My chest is 40 inches.",
         "context_pid": "P001",
-        "expected_intent": "FIT_RECOMMENDATION",
+        "expected_intent": "PURCHASE_DECISION",
         "expected_tools": ["fit_calculator_tool", "return_risk_prediction_tool"],
         "expected_criterion": lambda res: "physical garment measurements take precedence" in str(res.get("decision_synthesis", {}).get("reconciliation_explanation", "")).lower()
     },
@@ -117,7 +117,7 @@ TEST_SCENARIOS = [
         "name": "Unsupported Product Question (Out-of-Catalog)",
         "query": "Do you sell Rolex watches?",
         "context_pid": None,
-        "expected_intent": "UNSUPPORTED_OR_IRRELEVANT",
+        "expected_intent": "UNKNOWN_INTENT",
         "expected_tools": [],
         "expected_criterion": lambda res: "exclusive" in str(res.get("summary_message", "")).lower() or "apparel" in str(res.get("summary_message", "")).lower()
     },
@@ -126,7 +126,7 @@ TEST_SCENARIOS = [
         "name": "Invalid Product ID Validation",
         "query": "Will size M fit for product P999?",
         "context_pid": "P999",
-        "expected_intent": "INVALID_PRODUCT_ID",
+        "expected_intent": "UNKNOWN_INTENT",
         "expected_tools": ["product_information_tool"],
         "expected_criterion": lambda res: "not found" in str(res.get("summary_message", "")).lower()
     },
@@ -135,7 +135,7 @@ TEST_SCENARIOS = [
         "name": "Missing Product Size Chart Handling",
         "query": "Show size chart for P004",
         "context_pid": "P004",
-        "expected_intent": "SIZE_CHART_INQUIRY",
+        "expected_intent": "SIZE_INFORMATION",
         "expected_tools": ["size_chart_tool"],
         "expected_criterion": lambda res: True  # P004 size chart tool returns warning
     },
@@ -144,16 +144,16 @@ TEST_SCENARIOS = [
         "name": "Irrelevant Question",
         "query": "What is the capital of France?",
         "context_pid": None,
-        "expected_intent": "UNSUPPORTED_OR_IRRELEVANT",
+        "expected_intent": "UNKNOWN_INTENT",
         "expected_tools": [],
-        "expected_criterion": lambda res: res.get("intent") == "UNSUPPORTED_OR_IRRELEVANT"
+        "expected_criterion": lambda res: res.get("intent") == "UNKNOWN_INTENT"
     },
     {
         "id": "TC-16",
         "name": "RAG Retrieval Accuracy (Policy Inquiry)",
         "query": "What is the return policy for footwear?",
         "context_pid": None,
-        "expected_intent": "RETURN_POLICY_INQUIRY",
+        "expected_intent": "RETURN_POLICY",
         "expected_tools": ["rag_retrieval_tool"],
         "expected_criterion": lambda res: len(res.get("evidence_sources", [])) > 0 or "30" in str(res.get("final_recommendation", ""))
     },
@@ -189,7 +189,7 @@ TEST_SCENARIOS = [
         "name": "Backend/API Health & Robustness",
         "query": "What are the wash care instructions for P005?",
         "context_pid": "P005",
-        "expected_intent": "PRODUCT_SPECS_AND_CARE",
+        "expected_intent": "PRODUCT_INFORMATION",
         "expected_tools": ["product_information_tool"],
         "expected_criterion": lambda res: res.get("product_id") == "P005"
     }
@@ -291,3 +291,4 @@ def run_evaluation_suite():
 
 if __name__ == "__main__":
     run_evaluation_suite()
+

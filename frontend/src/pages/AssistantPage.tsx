@@ -185,8 +185,14 @@ export const AssistantPage: React.FC<AssistantPageProps> = ({ initialProductId }
           <div className="p-4 border-b border-slate-100 overflow-y-auto">
             <div className="flex space-x-3">
               <img
-                src={selectedProduct.image_url}
+                src={selectedProduct.image_url || `/images/products/${selectedProduct.product_id}.jpg`}
                 alt={selectedProduct.name}
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.endsWith('/images/products/P001.jpg')) {
+                    target.src = '/images/products/P001.jpg';
+                  }
+                }}
                 className="w-16 h-16 rounded-lg object-cover border border-slate-200 shrink-0 shadow-sm"
               />
               <div className="min-w-0 flex-1">

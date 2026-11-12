@@ -1,0 +1,688 @@
+{
+  "timestamp": "2026-11-12 12:14:55",
+  "total_cases": 32,
+  "passed_cases": 32,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "id": "TC-P1-01",
+      "name": "Material inquiry",
+      "query": "What material is P001 made from?",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "passed": true,
+      "latency_ms": 22.0
+    },
+    {
+      "id": "TC-P1-02",
+      "name": "Price inquiry",
+      "query": "How much does P002 cost?",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
+      "expected_pid": "P002",
+      "actual_pid": "P002",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "passed": true,
+      "latency_ms": 18.0
+    },
+    {
+      "id": "TC-P1-03",
+      "name": "Fabric care with wash keywords (triggers RAG)",
+      "query": "How do I wash P005 and will it shrink?",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
+      "expected_pid": "P005",
+      "actual_pid": "P005",
+      "expected_size": "30",
+      "actual_size": "30",
+      "expected_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 21.0
+    },
+    {
+      "id": "TC-P1-04",
+      "name": "Product description by name",
+      "query": "Is the Heritage Oxford shirt cotton or polyester?",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "passed": true,
+      "latency_ms": 15.6
+    },
+    {
+      "id": "TC-P1-05",
+      "name": "Dimensions query (Primary Regression)",
+      "query": "What are the dimensions of size M for P001?",
+      "expected_intent": "SIZE_INFORMATION",
+      "actual_intent": "SIZE_INFORMATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "passed": true,
+      "latency_ms": 17.0
+    },
+    {
+      "id": "TC-P1-06",
+      "name": "Measurements request for size L",
+      "query": "Show me the measurements of size L for P003",
+      "expected_intent": "SIZE_INFORMATION",
+      "actual_intent": "SIZE_INFORMATION",
+      "expected_pid": "P003",
+      "actual_pid": "P003",
+      "expected_size": "L",
+      "actual_size": "L",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "passed": true,
+      "latency_ms": 17.0
+    },
+    {
+      "id": "TC-P1-07",
+      "name": "Chest width specification inquiry",
+      "query": "What is the chest width of size XL for P002?",
+      "expected_intent": "SIZE_INFORMATION",
+      "actual_intent": "SIZE_INFORMATION",
+      "expected_pid": "P002",
+      "actual_pid": "P002",
+      "expected_size": "XL",
+      "actual_size": "XL",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "passed": true,
+      "latency_ms": 15.1
+    },
+    {
+      "id": "TC-P1-08",
+      "name": "General size chart request",
+      "query": "Show me the size chart for P006",
+      "expected_intent": "SIZE_INFORMATION",
+      "actual_intent": "SIZE_INFORMATION",
+      "expected_pid": "P006",
+      "actual_pid": "P006",
+      "expected_size": "30",
+      "actual_size": "30",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "passed": true,
+      "latency_ms": 17.0
+    },
+    {
+      "id": "TC-P1-09",
+      "name": "Fit inquiry with chest measurement",
+      "query": "My chest is 40 inches. Will size M fit P001?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "passed": true,
+      "latency_ms": 14.6
+    },
+    {
+      "id": "TC-P1-10",
+      "name": "Fit inquiry with chest and waist measurements",
+      "query": "My chest is 38 inches and waist is 32 inches. Will P001 Size S fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "S",
+      "actual_size": "S",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "passed": true,
+      "latency_ms": 16.2
+    },
+    {
+      "id": "TC-P1-11",
+      "name": "Metric cm-to-inches auto-conversion",
+      "query": "My chest is 101.6 cm and waist is 86.4 cm. Will P001 Size M fit?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool"
+      ],
+      "passed": true,
+      "latency_ms": 13.8
+    },
+    {
+      "id": "TC-P1-12",
+      "name": "Fit question missing all measurements",
+      "query": "Will P001 fit me comfortably?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "passed": true,
+      "latency_ms": 14.2
+    },
+    {
+      "id": "TC-P1-13",
+      "name": "Colloquial fit question (usually wear M)",
+      "query": "I usually wear M. Is P002 comfortable for me?",
+      "expected_intent": "FIT_RECOMMENDATION",
+      "actual_intent": "FIT_RECOMMENDATION",
+      "expected_pid": "P002",
+      "actual_pid": "P002",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool"
+      ],
+      "passed": true,
+      "latency_ms": 16.0
+    },
+    {
+      "id": "TC-P1-14",
+      "name": "Predicted return probability inquiry",
+      "query": "What is the predicted probability of return for P005?",
+      "expected_intent": "RETURN_RISK_PREDICTION",
+      "actual_intent": "RETURN_RISK_PREDICTION",
+      "expected_pid": "P005",
+      "actual_pid": "P005",
+      "expected_size": "30",
+      "actual_size": "30",
+      "expected_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "passed": true,
+      "latency_ms": 23.9
+    },
+    {
+      "id": "TC-P1-15",
+      "name": "Colloquial return risk query",
+      "query": "How risky is buying P007 in size S?",
+      "expected_intent": "RETURN_RISK_PREDICTION",
+      "actual_intent": "RETURN_RISK_PREDICTION",
+      "expected_pid": "P007",
+      "actual_pid": "P007",
+      "expected_size": "S",
+      "actual_size": "S",
+      "expected_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "passed": true,
+      "latency_ms": 23.3
+    },
+    {
+      "id": "TC-P1-16",
+      "name": "ML prediction model signal inquiry",
+      "query": "What is the ML return risk for P008?",
+      "expected_intent": "RETURN_RISK_PREDICTION",
+      "actual_intent": "RETURN_RISK_PREDICTION",
+      "expected_pid": "P008",
+      "actual_pid": "P008",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool"
+      ],
+      "passed": true,
+      "latency_ms": 22.6
+    },
+    {
+      "id": "TC-P1-17",
+      "name": "Why customers return inquiry",
+      "query": "Why do customers return P004?",
+      "expected_intent": "RETURN_HISTORY_ANALYSIS",
+      "actual_intent": "RETURN_HISTORY_ANALYSIS",
+      "expected_pid": "P004",
+      "actual_pid": "P004",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "passed": true,
+      "latency_ms": 19.0
+    },
+    {
+      "id": "TC-P1-18",
+      "name": "Common return reasons inquiry",
+      "query": "What are the common return reasons for P001?",
+      "expected_intent": "RETURN_HISTORY_ANALYSIS",
+      "actual_intent": "RETURN_HISTORY_ANALYSIS",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "passed": true,
+      "latency_ms": 20.3
+    },
+    {
+      "id": "TC-P1-19",
+      "name": "Defect pattern inquiry",
+      "query": "What are the defect patterns and customer complaints for P008?",
+      "expected_intent": "RETURN_HISTORY_ANALYSIS",
+      "actual_intent": "RETURN_HISTORY_ANALYSIS",
+      "expected_pid": "P008",
+      "actual_pid": "P008",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "return_history_analyzer_tool"
+      ],
+      "passed": true,
+      "latency_ms": 20.6
+    },
+    {
+      "id": "TC-P1-20",
+      "name": "General return policy inquiry",
+      "query": "What is the return policy?",
+      "expected_intent": "RETURN_POLICY",
+      "actual_intent": "RETURN_POLICY",
+      "expected_pid": null,
+      "actual_pid": null,
+      "expected_size": null,
+      "actual_size": "M",
+      "expected_tools": [
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 21.0
+    },
+    {
+      "id": "TC-P1-21",
+      "name": "Refund policy inquiry",
+      "query": "What is your refund policy and return window?",
+      "expected_intent": "RETURN_POLICY",
+      "actual_intent": "RETURN_POLICY",
+      "expected_pid": null,
+      "actual_pid": null,
+      "expected_size": null,
+      "actual_size": "M",
+      "expected_tools": [
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 16.5
+    },
+    {
+      "id": "TC-P1-22",
+      "name": "Can I return inquiry",
+      "query": "Can I return this shirt if it does not fit?",
+      "expected_intent": "RETURN_POLICY",
+      "actual_intent": "RETURN_POLICY",
+      "expected_pid": null,
+      "actual_pid": "P001",
+      "expected_size": null,
+      "actual_size": "M",
+      "expected_tools": [
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 17.2
+    },
+    {
+      "id": "TC-P1-23",
+      "name": "Should I purchase without measurements",
+      "query": "Should I purchase P001 in size M?",
+      "expected_intent": "PURCHASE_DECISION",
+      "actual_intent": "PURCHASE_DECISION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 23.8
+    },
+    {
+      "id": "TC-P1-24",
+      "name": "Should I buy with chest measurement (full reconciliation)",
+      "query": "Should I buy P001 in size M? My chest is 40 inches.",
+      "expected_intent": "PURCHASE_DECISION",
+      "actual_intent": "PURCHASE_DECISION",
+      "expected_pid": "P001",
+      "actual_pid": "P001",
+      "expected_size": "M",
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 27.0
+    },
+    {
+      "id": "TC-P1-25",
+      "name": "Is this a good purchase phrasing",
+      "query": "Is P002 in size L a good purchase for my measurements?",
+      "expected_intent": "PURCHASE_DECISION",
+      "actual_intent": "PURCHASE_DECISION",
+      "expected_pid": "P002",
+      "actual_pid": "P002",
+      "expected_size": "L",
+      "actual_size": "L",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 24.0
+    },
+    {
+      "id": "TC-P1-26",
+      "name": "Purchase decision with numeric pants size",
+      "query": "Should I buy P005 in size 32 with waist 34 inches?",
+      "expected_intent": "PURCHASE_DECISION",
+      "actual_intent": "PURCHASE_DECISION",
+      "expected_pid": "P005",
+      "actual_pid": "P005",
+      "expected_size": "32",
+      "actual_size": "32",
+      "expected_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "size_chart_tool",
+        "fit_calculator_tool",
+        "return_risk_prediction_tool",
+        "return_history_analyzer_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 24.0
+    },
+    {
+      "id": "TC-P1-27",
+      "name": "Tell me more about product",
+      "query": "Tell me more about P003",
+      "expected_intent": "GENERAL_PRODUCT_QUESTION",
+      "actual_intent": "GENERAL_PRODUCT_QUESTION",
+      "expected_pid": "P003",
+      "actual_pid": "P003",
+      "expected_size": null,
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 16.0
+    },
+    {
+      "id": "TC-P1-28",
+      "name": "What features should I consider",
+      "query": "Which features should I consider for P009?",
+      "expected_intent": "GENERAL_PRODUCT_QUESTION",
+      "actual_intent": "GENERAL_PRODUCT_QUESTION",
+      "expected_pid": "P009",
+      "actual_pid": "P009",
+      "expected_size": null,
+      "actual_size": "M",
+      "expected_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool",
+        "rag_retrieval_tool"
+      ],
+      "passed": true,
+      "latency_ms": 18.0
+    },
+    {
+      "id": "TC-P1-29",
+      "name": "Out-of-domain general trivia",
+      "query": "What is the capital of France?",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
+      "expected_pid": null,
+      "actual_pid": null,
+      "expected_size": null,
+      "actual_size": null,
+      "expected_tools": [],
+      "actual_tools": [],
+      "passed": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "TC-P1-30",
+      "name": "Out-of-catalog luxury product",
+      "query": "Do you sell Rolex watches or luxury jewelry?",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
+      "expected_pid": null,
+      "actual_pid": null,
+      "expected_size": null,
+      "actual_size": null,
+      "expected_tools": [],
+      "actual_tools": [],
+      "passed": true,
+      "latency_ms": 0.0
+    },
+    {
+      "id": "TC-P1-31",
+      "name": "Invalid product ID validation",
+      "query": "Will size M fit for product P999?",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
+      "expected_pid": "P999",
+      "actual_pid": "P999",
+      "expected_size": null,
+      "actual_size": null,
+      "expected_tools": [
+        "product_information_tool"
+      ],
+      "actual_tools": [
+        "product_information_tool"
+      ],
+      "passed": true,
+      "latency_ms": 1.0
+    },
+    {
+      "id": "TC-P1-32",
+      "name": "Cryptocurrency question",
+      "query": "Can I pay using Bitcoin or cryptocurrency?",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
+      "expected_pid": null,
+      "actual_pid": null,
+      "expected_size": null,
+      "actual_size": null,
+      "expected_tools": [],
+      "actual_tools": [],
+      "passed": true,
+      "latency_ms": 0.0
+    }
+  ]
+}

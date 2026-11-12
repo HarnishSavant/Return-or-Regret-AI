@@ -1,100 +1,91 @@
-# AI Agent Architecture & Dynamic Tool Orchestration
+# AI Agent Architecture & Dynamic Tool Orchestration (Phase 1.2)
 
 ## 1. Architectural Overview
 The **Return or Regret AI** Agent Controller is a Python-based stateful coordinator that translates free-form customer shopping inquiries into structured, deterministic, and explainable shopping recommendations.
 
-Unlike standard chatbots that hallucinate measurements or blend ungrounded text, the agent controller:
-1. Classifies natural language intention into discrete task domains.
-2. Extracts and sanitizes parameters (Product IDs, selected size, anatomical measurements).
-3. Selects **only the necessary tools** required to fulfill the specific query.
-4. Executes registered Python tools against verified catalog data and trained models.
-5. Employs the **Decision Synthesis Engine** to reconcile physical ease vs cohort ML probabilities.
-6. Returns a structured `AgentResponse` payload adhering to strict Pydantic schemas.
+The architecture decouples intent classification and entity extraction into a dedicated module (`backend/agent/intent_classifier.py`), enforces **nine standardized canonical intents**, performs dynamic tool selection to eliminate unnecessary compute, and synthesizes multi-pillar evidence through the **Decision Synthesis Engine**.
 
 ---
 
-## 2. Registered Python Tool Registry
+## 2. Standardized Canonical Intent Taxonomy
+
+Phase 1.2 establishes exactly 9 canonical intents via the `AgentIntent` enum in `schemas/agent_schemas.py`:
+
+| Canonical Intent | Description | Standard Tools Selected |
+| :--- | :--- | :--- |
+| `PRODUCT_INFORMATION` | Fabric composition, care instructions, price, silhouette | `product_information_tool` (+ `rag_retrieval_tool` for wash/shrinkage) |
+| `SIZE_INFORMATION` | Garment dimensions, sizing charts, measurements | `product_information_tool`, `size_chart_tool` |
+| `FIT_RECOMMENDATION` | Personal fit evaluation based on body ease | `product_information_tool`, `size_chart_tool`, `fit_calculator_tool` (if measurements present) |
+| `RETURN_RISK_PREDICTION` | ML cohort return probability & risk tier | `product_information_tool`, `return_risk_prediction_tool`, `return_history_analyzer_tool` |
+| `RETURN_HISTORY_ANALYSIS` | Historical return rates, defect clusters, quotes | `product_information_tool`, `return_history_analyzer_tool` |
+| `RETURN_POLICY` | Return window, exchange terms, refunds | `rag_retrieval_tool` |
+| `PURCHASE_DECISION` | End-to-end purchasing recommendation | `product_information_tool`, `size_chart_tool`, `fit_calculator_tool` (if meas), `return_risk_prediction_tool`, `return_history_analyzer_tool`, `rag_retrieval_tool` |
+| `GENERAL_PRODUCT_QUESTION` | Overview, features, brand consultation | `product_information_tool`, `rag_retrieval_tool` |
+| `UNKNOWN_INTENT` | Out-of-domain queries or unlisted product IDs | *Zero tools* (or `product_information_tool` for ID validation) |
+
+---
+
+## 3. Dedicated Intent Classifier Module (`backend/agent/intent_classifier.py`)
+
+The classifier operates independently and deterministically without hard-coding answers:
+1. **Keyword Cluster Scoring:** Weighted regex pattern scoring across all 9 intent clusters.
+2. **Disambiguation Rules:** Priority hierarchy resolving overlaps (e.g., body measurements + fit question routes to `FIT_RECOMMENDATION`; "should I buy" routes to `PURCHASE_DECISION`; explicit "dimensions of size M" routes to `SIZE_INFORMATION`).
+3. **Structured Entity Extraction:**
+   - `product_id`: Extracted via regex `(P\d{3,4})`, context, or catalog keyword matching; validated against catalog.
+   - `requested_size`: Letter (`XS`-`XXL`) or numeric waist (`28`-`42`), with safeguards preventing non-sizes (e.g., "chart", "guide", "dimensions") from being misidentified.
+   - `measurements`: Extracted for chest, waist, shoulder, hip, inseam, with auto-conversion from cm to inches ($> 60\text{ cm} \rightarrow \div 2.54$) and plausibility filtering.
+   - `missing_required_information`: Flags missing chest/waist/shoulder requirements dynamically.
+
+---
+
+## 4. Registered Python Tool Registry
 
 | Tool | File Location | Scope of Responsibility |
 | :--- | :--- | :--- |
 | `product_information_tool` | `tools/agent_tools.py` | Retrieves verified fabric composition, care guide, silhouette, and known fit quirks. Validates product ID. |
 | `size_chart_tool` | `tools/agent_tools.py` | Extracts authentic garment dimensions (inches) across all published sizes. |
-| `fit_calculator_tool` | `tools/agent_tools.py` | Computes ease tolerance ($\text{Garment} - \text{Body}$) using fit-type specific thresholds; verifies alternative size dimensions. |
+| `fit_calculator_tool` | `tools/agent_tools.py` | Computes ease tolerance ($\text{Garment} - \text{Body}$) using fit-type specific thresholds; verifies alternative size dimensions in catalog. |
 | `return_risk_prediction_tool` | `tools/agent_tools.py` | Executes the serialized Scikit-Learn pipeline using pre-purchase features. |
 | `return_history_analyzer_tool` | `tools/agent_tools.py` | Analyzes historical return rates, defect reason breakdown, and customer feedback quotes. |
 | `rag_retrieval_tool` | `tools/agent_tools.py` | Performs TF-IDF cosine similarity search across markdown policies, sizing guides, and fabric care docs. |
 
 ---
 
-## 3. Dynamic Tool Selection Rules
-
-| Query Type / Intent | Example Query | Tools Executed | Reason for Tool Selection |
-| :--- | :--- | :--- | :--- |
-| `PRODUCT_SPECS_AND_CARE` | *"What material is P001 made of?"* | `product_information_tool` | Only catalog metadata needed. Fit/ML tools are irrelevant. |
-| `SIZE_CHART_INQUIRY` | *"Show me the size chart for P003."* | `product_information_tool`, `size_chart_tool` | Product context + size chart table. |
-| `RETURN_POLICY_INQUIRY` | *"What is the return policy for footwear?"* | `rag_retrieval_tool` | Policy document vector search. |
-| `RETURN_HISTORY_INQUIRY` | *"Why do customers return P004?"* | `product_information_tool`, `return_history_analyzer_tool` | Product metadata + empirical return records. |
-| `RETURN_RISK_INQUIRY` | *"What is the predicted probability of return for P005?"* | `product_information_tool`, `return_risk_prediction_tool`, `return_history_analyzer_tool` | ML model evaluation + historical context. |
-| `FIT_RECOMMENDATION` | *"My chest is 40 inches. Will P001 Size M fit?"* | `product_information_tool`, `size_chart_tool`, `fit_calculator_tool`, `return_risk_prediction_tool`, `return_history_analyzer_tool`, `rag_retrieval_tool` | Full multi-pillar synthesis required. |
-| `UNSUPPORTED_OR_IRRELEVANT` | *"Do you sell Rolex watches?"* | *None* | Fast rejection without wasting tool compute. |
-| `INVALID_PRODUCT_ID` | *"Will size M fit for product P999?"* | `product_information_tool` | Validates ID, terminates with clarification prompt. |
-
----
-
-## 4. Structured Response Contract (`AgentResponse`)
+## 5. Structured Response Schema (`AgentResponse`)
 
 ```json
 {
-  "intent": "FIT_RECOMMENDATION",
+  "intent": "SIZE_INFORMATION",
   "product_id": "P001",
   "product_name": "Heritage Oxford Slim Shirt",
   "selected_size": "M",
-  "summary_message": "Personalised body ease calculation reveals active fit restriction in Size M...",
-  "verdict": "High Fit Concern",
-  "fit_assessment": {
-    "verdict": "High Fit Concern",
-    "confidence": 0.92,
-    "fit_type": "Slim Fit",
-    "tight_areas": ["Chest is severely constricted (+0.0\" ease vs recommended minimum 1.5\" for Slim Fit)"],
-    "measurement_comparison": [
-      {
-        "dimension": "Chest",
-        "body_measurement": 40.0,
-        "garment_measurement": 40.0,
-        "ease": 0.0,
-        "interpretation": "Severely constricted (only 0.0\" ease; button pull/chafing)",
-        "status": "tight"
-      }
-    ],
-    "alternative_size_check": {
-      "alternative_size": "L",
-      "is_available_in_chart": true,
-      "assessment_notes": "Size L measurements verified in catalog (Chest: 43.0\" (gives +3.0\" ease))..."
-    }
+  "summary_message": "Size chart retrieved for Heritage Oxford Slim Shirt (Slim Fit).",
+  "verdict": null,
+  "fit_assessment": null,
+  "measurement_comparison": null,
+  "ml_prediction": null,
+  "historical_analysis": null,
+  "decision_synthesis": null,
+  "final_recommendation": "Review the dimensions for Size M in the table above...",
+  "evidence_sources": [],
+  "missing_information": [],
+  "customer_explanation": {
+    "methodology_summary": "This evaluation is based on verified catalog specifications...",
+    "data_sources_used": ["Official Garment Size Chart"],
+    "limitations_notice": "Garment measurements reflect manufacturer specifications with standard ±0.5 inch tailoring tolerance."
   },
-  "ml_prediction": {
-    "predicted_return_probability": 0.118,
-    "predicted_return_percentage": 11.8,
-    "risk_tier": "Low",
-    "model_name": "Logistic Regression (Balanced)"
-  },
-  "historical_analysis": {
-    "total_orders_analyzed": 40,
-    "overall_return_rate": 25.0,
-    "top_return_reasons": [{"reason": "Shoulder / Armhole Tightness", "percentage": 50.0}]
-  },
-  "decision_synthesis": {
-    "reconciled_verdict": "High Fit Concern",
-    "reconciliation_explanation": "Physical ease deficit takes precedence over low ML probability...",
-    "actionable_advice": "We strongly recommend checking Size L instead of Size M..."
-  },
-  "final_recommendation": "We strongly recommend checking Size L instead of Size M...",
-  "evidence_sources": [...],
-  "customer_explanation": {...},
-  "tools_executed": ["product_information_tool", "size_chart_tool", "fit_calculator_tool", "return_risk_prediction_tool", "return_history_analyzer_tool", "rag_retrieval_tool"],
+  "tools_executed": ["product_information_tool", "size_chart_tool"],
   "execution_metadata": {
-    "latency_ms": 28.3,
+    "latency_ms": 12.0,
     "execution_mode": "Deterministic Academic Engine"
   }
 }
 ```
+
+---
+
+## 6. Evaluation Verification
+
+The architecture is continuously validated by two automated test suites:
+1. `backend/evaluation/test_scenarios.py`: **20/20 Passed (100.0%)**
+2. `backend/evaluation/test_phase1_agent.py`: **32/32 Passed (100.0%)**

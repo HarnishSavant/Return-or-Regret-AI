@@ -146,8 +146,14 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigateToAssistan
               {/* Product Thumbnail */}
               <div className="relative h-48 bg-slate-100 overflow-hidden">
                 <img
-                  src={prod.image_url}
+                  src={prod.image_url || `/images/products/${prod.product_id}.jpg`}
                   alt={prod.name}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.endsWith('/images/products/P001.jpg')) {
+                      target.src = '/images/products/P001.jpg';
+                    }
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-3 left-3 flex items-center space-x-1.5">

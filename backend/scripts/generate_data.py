@@ -49,7 +49,7 @@ PRODUCTS = [
         "sizes": ["S", "M", "L", "XL", "XXL"],
         "size_guide_available": True,
         "description_completeness": 0.95,
-        "image_url": "https://images.unsplash.com/photo-1620012253295-c15c429f6f60?auto=format&fit=crop&w=600&q=80",
+        "image_url": "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=600&q=80",
         "description": "A refined regular-fit dress shirt featuring a spread collar, French placket, and two-ply 80s yarn twill fabric. True to standard business tailoring measurements.",
         "care_instructions": "Machine wash warm, hang dry, medium steam iron.",
         "known_fit_quirks": "True to size. Generous waist allowance suitable for all-day comfort.",
@@ -582,6 +582,7 @@ df_orders.to_csv(os.path.join(DATA_DIR, "orders_dataset.csv"), index=False)
 
 # Enrich PRODUCTS with computed statistics & risk category
 for p in PRODUCTS:
+    p["image_url"] = f"/images/products/{p['product_id']}.jpg"
     p_stat = prod_stats[prod_stats["product_id"] == p["product_id"]]
     if not p_stat.empty:
         rate = float(p_stat["historical_return_rate"].iloc[0])

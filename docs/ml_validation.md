@@ -47,3 +47,4 @@ discount_applied:          0.0610
 ```
 
 Notice: These represent **global model-level weights** across the dataset. The Decision Synthesis Engine clearly explains that these cohort weights do not supersede individual anatomical measurements.
+

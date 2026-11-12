@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-11T13:19:24",
+  "timestamp": "2026-11-12T12:12:46",
   "total_scenarios": 20,
   "passed": 20,
   "failed": 0,
@@ -9,15 +9,15 @@
       "test_id": "TC-01",
       "name": "Product Material Question",
       "query": "What material is P001 made of?",
-      "expected_intent": "PRODUCT_SPECS_AND_CARE",
-      "actual_intent": "PRODUCT_SPECS_AND_CARE",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
       "expected_tools": [
         "product_information_tool"
       ],
       "actual_tools": [
         "product_information_tool"
       ],
-      "latency_ms": 24.0,
+      "latency_ms": 14.9,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,
@@ -27,15 +27,15 @@
       "test_id": "TC-02",
       "name": "Product Price Question",
       "query": "How much does P002 cost?",
-      "expected_intent": "PRODUCT_SPECS_AND_CARE",
-      "actual_intent": "PRODUCT_SPECS_AND_CARE",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
       "expected_tools": [
         "product_information_tool"
       ],
       "actual_tools": [
         "product_information_tool"
       ],
-      "latency_ms": 17.8,
+      "latency_ms": 12.0,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,
@@ -45,8 +45,8 @@
       "test_id": "TC-03",
       "name": "Size Chart Question",
       "query": "Show me the size chart for P003.",
-      "expected_intent": "SIZE_CHART_INQUIRY",
-      "actual_intent": "SIZE_CHART_INQUIRY",
+      "expected_intent": "SIZE_INFORMATION",
+      "actual_intent": "SIZE_INFORMATION",
       "expected_tools": [
         "product_information_tool",
         "size_chart_tool"
@@ -55,7 +55,7 @@
         "product_information_tool",
         "size_chart_tool"
       ],
-      "latency_ms": 15.8,
+      "latency_ms": 12.0,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,
@@ -73,14 +73,11 @@
       ],
       "actual_tools": [
         "product_information_tool",
-        "size_chart_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "size_chart_tool"
       ],
-      "latency_ms": 30.1,
+      "latency_ms": 11.0,
       "status": "PASS",
-      "verdict": "Insufficient Information",
+      "verdict": null,
       "tools_pass": true,
       "criterion_pass": true
     },
@@ -98,12 +95,9 @@
       "actual_tools": [
         "product_information_tool",
         "size_chart_tool",
-        "fit_calculator_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "fit_calculator_tool"
       ],
-      "latency_ms": 25.7,
+      "latency_ms": 13.0,
       "status": "PASS",
       "verdict": "High Fit Concern",
       "tools_pass": true,
@@ -123,12 +117,9 @@
       "actual_tools": [
         "product_information_tool",
         "size_chart_tool",
-        "fit_calculator_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "fit_calculator_tool"
       ],
-      "latency_ms": 26.0,
+      "latency_ms": 13.0,
       "status": "PASS",
       "verdict": "High Fit Concern",
       "tools_pass": true,
@@ -146,12 +137,9 @@
       "actual_tools": [
         "product_information_tool",
         "size_chart_tool",
-        "fit_calculator_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "fit_calculator_tool"
       ],
-      "latency_ms": 31.0,
+      "latency_ms": 13.0,
       "status": "PASS",
       "verdict": "High Fit Concern",
       "tools_pass": true,
@@ -161,8 +149,8 @@
       "test_id": "TC-08",
       "name": "Historical Return Analysis",
       "query": "Why do customers return P004?",
-      "expected_intent": "RETURN_HISTORY_INQUIRY",
-      "actual_intent": "RETURN_HISTORY_INQUIRY",
+      "expected_intent": "RETURN_HISTORY_ANALYSIS",
+      "actual_intent": "RETURN_HISTORY_ANALYSIS",
       "expected_tools": [
         "product_information_tool",
         "return_history_analyzer_tool"
@@ -171,7 +159,7 @@
         "product_information_tool",
         "return_history_analyzer_tool"
       ],
-      "latency_ms": 20.6,
+      "latency_ms": 17.0,
       "status": "PASS",
       "verdict": "Insufficient Information",
       "tools_pass": true,
@@ -181,8 +169,8 @@
       "test_id": "TC-09",
       "name": "ML Return Prediction",
       "query": "What is the predicted probability of return for P005?",
-      "expected_intent": "RETURN_RISK_INQUIRY",
-      "actual_intent": "RETURN_RISK_INQUIRY",
+      "expected_intent": "RETURN_RISK_PREDICTION",
+      "actual_intent": "RETURN_RISK_PREDICTION",
       "expected_tools": [
         "return_risk_prediction_tool"
       ],
@@ -191,7 +179,7 @@
         "return_risk_prediction_tool",
         "return_history_analyzer_tool"
       ],
-      "latency_ms": 29.4,
+      "latency_ms": 22.0,
       "status": "PASS",
       "verdict": "Insufficient Information",
       "tools_pass": true,
@@ -201,8 +189,8 @@
       "test_id": "TC-10",
       "name": "Complex Shopping Decision",
       "query": "Should I purchase P001 in size M with chest 40 inches?",
-      "expected_intent": "COMPLEX_PURCHASE_DECISION",
-      "actual_intent": "COMPLEX_PURCHASE_DECISION",
+      "expected_intent": "PURCHASE_DECISION",
+      "actual_intent": "PURCHASE_DECISION",
       "expected_tools": [
         "fit_calculator_tool",
         "return_risk_prediction_tool",
@@ -216,7 +204,7 @@
         "return_history_analyzer_tool",
         "rag_retrieval_tool"
       ],
-      "latency_ms": 27.1,
+      "latency_ms": 21.0,
       "status": "PASS",
       "verdict": "High Fit Concern",
       "tools_pass": true,
@@ -225,9 +213,9 @@
     {
       "test_id": "TC-11",
       "name": "Conflicting ML & Fit Results Reconciliation",
-      "query": "My chest is 40 inches. Will P001 Size M fit?",
-      "expected_intent": "FIT_RECOMMENDATION",
-      "actual_intent": "FIT_RECOMMENDATION",
+      "query": "Should I purchase P001 in size M? My chest is 40 inches.",
+      "expected_intent": "PURCHASE_DECISION",
+      "actual_intent": "PURCHASE_DECISION",
       "expected_tools": [
         "fit_calculator_tool",
         "return_risk_prediction_tool"
@@ -240,7 +228,7 @@
         "return_history_analyzer_tool",
         "rag_retrieval_tool"
       ],
-      "latency_ms": 28.3,
+      "latency_ms": 23.0,
       "status": "PASS",
       "verdict": "High Fit Concern",
       "tools_pass": true,
@@ -250,11 +238,11 @@
       "test_id": "TC-12",
       "name": "Unsupported Product Question (Out-of-Catalog)",
       "query": "Do you sell Rolex watches?",
-      "expected_intent": "UNSUPPORTED_OR_IRRELEVANT",
-      "actual_intent": "UNSUPPORTED_OR_IRRELEVANT",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
       "expected_tools": [],
       "actual_tools": [],
-      "latency_ms": 0.0,
+      "latency_ms": 1.0,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,
@@ -264,8 +252,8 @@
       "test_id": "TC-13",
       "name": "Invalid Product ID Validation",
       "query": "Will size M fit for product P999?",
-      "expected_intent": "INVALID_PRODUCT_ID",
-      "actual_intent": "INVALID_PRODUCT_ID",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
       "expected_tools": [
         "product_information_tool"
       ],
@@ -282,8 +270,8 @@
       "test_id": "TC-14",
       "name": "Missing Product Size Chart Handling",
       "query": "Show size chart for P004",
-      "expected_intent": "SIZE_CHART_INQUIRY",
-      "actual_intent": "SIZE_CHART_INQUIRY",
+      "expected_intent": "SIZE_INFORMATION",
+      "actual_intent": "SIZE_INFORMATION",
       "expected_tools": [
         "size_chart_tool"
       ],
@@ -291,7 +279,7 @@
         "product_information_tool",
         "size_chart_tool"
       ],
-      "latency_ms": 15.4,
+      "latency_ms": 12.0,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,
@@ -301,8 +289,8 @@
       "test_id": "TC-15",
       "name": "Irrelevant Question",
       "query": "What is the capital of France?",
-      "expected_intent": "UNSUPPORTED_OR_IRRELEVANT",
-      "actual_intent": "UNSUPPORTED_OR_IRRELEVANT",
+      "expected_intent": "UNKNOWN_INTENT",
+      "actual_intent": "UNKNOWN_INTENT",
       "expected_tools": [],
       "actual_tools": [],
       "latency_ms": 0.0,
@@ -315,15 +303,15 @@
       "test_id": "TC-16",
       "name": "RAG Retrieval Accuracy (Policy Inquiry)",
       "query": "What is the return policy for footwear?",
-      "expected_intent": "RETURN_POLICY_INQUIRY",
-      "actual_intent": "RETURN_POLICY_INQUIRY",
+      "expected_intent": "RETURN_POLICY",
+      "actual_intent": "RETURN_POLICY",
       "expected_tools": [
         "rag_retrieval_tool"
       ],
       "actual_tools": [
         "rag_retrieval_tool"
       ],
-      "latency_ms": 18.3,
+      "latency_ms": 13.0,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,
@@ -340,14 +328,11 @@
       ],
       "actual_tools": [
         "product_information_tool",
-        "size_chart_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "size_chart_tool"
       ],
-      "latency_ms": 31.3,
+      "latency_ms": 12.0,
       "status": "PASS",
-      "verdict": "Insufficient Information",
+      "verdict": null,
       "tools_pass": true,
       "criterion_pass": true
     },
@@ -356,7 +341,7 @@
       "name": "Multi-Tool Execution Under Latency Target",
       "query": "I have 42 chest and 36 waist. Recommend size for P002",
       "expected_intent": "FIT_RECOMMENDATION",
-      "actual_intent": "GENERAL_PRODUCT_CONSULTATION",
+      "actual_intent": "FIT_RECOMMENDATION",
       "expected_tools": [
         "product_information_tool",
         "size_chart_tool",
@@ -365,12 +350,9 @@
       "actual_tools": [
         "product_information_tool",
         "size_chart_tool",
-        "fit_calculator_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "fit_calculator_tool"
       ],
-      "latency_ms": 30.7,
+      "latency_ms": 16.0,
       "status": "PASS",
       "verdict": "Insufficient Information",
       "tools_pass": true,
@@ -388,12 +370,9 @@
       "actual_tools": [
         "product_information_tool",
         "size_chart_tool",
-        "fit_calculator_tool",
-        "return_risk_prediction_tool",
-        "return_history_analyzer_tool",
-        "rag_retrieval_tool"
+        "fit_calculator_tool"
       ],
-      "latency_ms": 26.0,
+      "latency_ms": 12.0,
       "status": "PASS",
       "verdict": "High Fit Concern",
       "tools_pass": true,
@@ -403,8 +382,8 @@
       "test_id": "TC-20",
       "name": "Backend/API Health & Robustness",
       "query": "What are the wash care instructions for P005?",
-      "expected_intent": "PRODUCT_SPECS_AND_CARE",
-      "actual_intent": "PRODUCT_SPECS_AND_CARE",
+      "expected_intent": "PRODUCT_INFORMATION",
+      "actual_intent": "PRODUCT_INFORMATION",
       "expected_tools": [
         "product_information_tool"
       ],
@@ -412,7 +391,7 @@
         "product_information_tool",
         "rag_retrieval_tool"
       ],
-      "latency_ms": 24.4,
+      "latency_ms": 14.0,
       "status": "PASS",
       "verdict": null,
       "tools_pass": true,

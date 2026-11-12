@@ -80,3 +80,4 @@ Rather than inventing an uncalibrated "Combined Risk Index" (e.g. $0.5 \cdot \te
 1. **Physical Compatibility Gate:** If $\text{Ease} < \text{MinEase}(\text{FitType})$, verdict $\in \{\text{Fit Concern}, \text{High Fit Concern}\}$.
 2. **Defect Corroboration:** Increases diagnostic confidence when defect reasons match the tight anatomical zone.
 3. **Cohort Contextualization:** Used to advise on promotional/bracketing behavior (e.g. warning against ordering multiple sizes simultaneously when a single verified size matches).
+
