@@ -1,5 +1,26 @@
 [
   {
+    "timestamp": "2026-11-14T19:36:22.220670",
+    "query": "I'm looking at P001 Heritage Oxford Slim Shirt. My chest is 40 inches and waist is 34. Will size M fit me well, and what is the return risk?",
+    "detected_intent": "RETURN_RISK_PREDICTION",
+    "product_id": "P001",
+    "selected_size": "M",
+    "customer_measurements": {
+      "chest": 40.0,
+      "waist": 34.0
+    },
+    "tools_called": [
+      "product_information_tool",
+      "return_risk_prediction_tool",
+      "return_history_analyzer_tool"
+    ],
+    "execution_time_ms": 14.0,
+    "execution_mode": "Deterministic Academic Engine",
+    "verdict": "Insufficient Information",
+    "prediction_risk": "Low",
+    "predicted_probability": 11.8
+  },
+  {
     "timestamp": "2026-11-12T12:14:55.201869",
     "query": "Which features should I consider for P009?",
     "detected_intent": "GENERAL_PRODUCT_QUESTION",
